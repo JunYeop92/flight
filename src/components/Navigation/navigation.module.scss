@@ -1,0 +1,23 @@
+@use '/src/styles/constants/colors';
+
+.nav {
+  ul {
+    display: flex;
+
+    li {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    a {
+      color: colors.$GRAYA;
+
+      &.active {
+        font-weight: 600;
+        color: colors.$BLUE;
+      }
+    }
+  }
+}

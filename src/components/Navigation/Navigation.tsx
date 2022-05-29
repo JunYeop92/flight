@@ -1,0 +1,22 @@
+import { NavLink } from 'react-router-dom'
+import { cx } from 'styles'
+import styles from './navigation.module.scss'
+
+export default function Navigation() {
+  return (
+    <nav className={styles.nav}>
+      <ul>
+        <li>
+          <NavLink to='/' className={({ isActive }) => cx({ [styles.active]: isActive })}>
+            출발
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='arrive' className={({ isActive }) => cx({ [styles.active]: isActive })}>
+            도착
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  )
+}
