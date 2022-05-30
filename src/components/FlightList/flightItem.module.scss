@@ -1,3 +1,5 @@
+@use '/src/styles/mixins/typography';
+
 li.wrapper {
   display: flex;
   height: 25px;
@@ -7,8 +9,8 @@ li.wrapper {
   border-bottom: 1px solid;
 
   div {
+    @include typography.lineClamp(1);
     flex-shrink: 0;
-    overflow: hidden;
     text-align: center;
     border-right: 1px solid;
 
