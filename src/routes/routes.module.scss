@@ -2,11 +2,18 @@
 @use '/src/styles/mixins/flexbox';
 
 .app {
+  background-color: colors.$GRAY6;
+
   main {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    padding: 0 20px;
+    @include flexbox.flexbox(center, center);
+    flex-direction: column;
+    padding-bottom: 60px;
+    overflow: auto;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

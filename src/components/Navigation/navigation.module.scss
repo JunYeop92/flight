@@ -1,8 +1,13 @@
 @use '/src/styles/constants/colors';
 
 .nav {
+  background-color: colors.$WHITE;
+  border-top: 1px solid colors.$GRAY3;
+  box-shadow: #00000029 0 -1.5px 4px;
+
   ul {
     display: flex;
+    align-items: center;
 
     li {
       width: 100%;
@@ -13,6 +18,7 @@
 
     a {
       color: colors.$GRAYA;
+      border-radius: 10px;
 
       &.active {
         font-weight: 600;

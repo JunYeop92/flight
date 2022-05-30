@@ -3,22 +3,26 @@
 
 .wrapper {
   width: 320px;
+  background-color: colors.$WHITE;
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0, 16%) 0 1px 4px;
 
   .title {
     display: flex;
-    height: 25px;
+    height: 30px;
     font-size: 14px;
-    line-height: 25px;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    font-weight: bold;
+    line-height: 30px;
+    color: colors.$WHITE;
+    background-color: colors.$BLUE;
+    border-radius: 5px 5px 0 0;
 
     div {
-      flex-shrink: 0;
       text-align: center;
-      border-right: 1px solid;
+      border-right: 1px solid colors.$WHITE;
 
-      &:first-child {
-        border-left: 1px solid;
+      &:last-child {
+        border-right: none;
       }
     }
   }
@@ -45,6 +49,5 @@
 
   ul {
     width: 100%;
-    margin-top: 10px;
   }
 }
