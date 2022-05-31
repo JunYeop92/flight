@@ -3,9 +3,9 @@
 
 li.wrapper {
   display: flex;
-  height: 32px;
+  height: 35px;
   font-size: 12px;
-  line-height: 32px;
+  line-height: 35px;
   border-bottom: 1px solid colors.$GRAY4;
 
   &:last-child {
@@ -23,15 +23,15 @@ li.wrapper {
   }
 
   .t1 {
-    width: 70px;
+    width: 60px;
   }
 
   .t2 {
-    width: 80px;
+    width: 85px;
   }
 
   .t3 {
-    width: 80px;
+    width: 85px;
   }
 
   .t4 {

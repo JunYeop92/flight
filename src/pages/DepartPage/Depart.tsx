@@ -12,7 +12,7 @@ export default function Depart() {
       suspense: true,
     }
   )
-
+  console.log(data)
   if (!data) return null
   return <FlightList dataList={data} />
 }

@@ -4,6 +4,7 @@
 .wrapper {
   width: 320px;
   background-color: colors.$WHITE;
+  border: 1px solid colors.$GRAY3;
   border-radius: 5px;
   box-shadow: rgb(0, 0, 0, 16%) 0 1px 4px;
 
@@ -28,15 +29,15 @@
   }
 
   .t1 {
-    width: 70px;
+    width: 60px;
   }
 
   .t2 {
-    width: 80px;
+    width: 85px;
   }
 
   .t3 {
-    width: 80px;
+    width: 85px;
   }
 
   .t4 {
@@ -49,5 +50,7 @@
 
   ul {
     width: 100%;
+    height: 72vh;
+    overflow: auto;
   }
 }

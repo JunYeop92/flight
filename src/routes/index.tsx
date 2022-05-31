@@ -4,11 +4,14 @@ import ArrivePage from 'pages/ArrivePage'
 import DepartPage from 'pages/DepartPage'
 import Navigation from 'components/Navigation/Navigation'
 import NowTime from 'components/NowTime/NowTime'
+import Title from 'components/Title/Title'
 
 export default function App() {
   return (
     <div className={styles.app}>
-      <header>인천공항 운항 스케줄</header>
+      <header>
+        <Title />
+      </header>
       <main>
         <NowTime />
         <Routes>
