@@ -2,14 +2,17 @@
 @use '/src/styles/constants/colors';
 
 li.wrapper {
-  display: flex;
-  height: 35px;
-  font-size: 12px;
-  line-height: 35px;
   border-bottom: 1px solid colors.$GRAY4;
 
   &:last-child {
     border-bottom: none;
+  }
+
+  button {
+    display: flex;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
   }
 
   div {
