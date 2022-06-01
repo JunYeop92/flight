@@ -2,11 +2,12 @@
 @use '/src/styles/mixins/flexbox';
 
 .app {
+  background-color: colors.$GRAY6;
+
   header {
     margin-bottom: 15px;
     background-color: colors.$WHITE;
     border-bottom: 1px solid colors.$GRAY3;
-    box-shadow: #00000029 0 1.5px 4px;
   }
 
   main {
@@ -20,6 +21,5 @@
     width: 100%;
     background-color: colors.$WHITE;
     border-top: 1px solid colors.$GRAY3;
-    box-shadow: #00000029 0 -1.5px 4px;
   }
 }
