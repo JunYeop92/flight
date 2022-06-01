@@ -1,8 +1,13 @@
-import styles from './flightModal.module.scss'
-import Portal from 'components/Portal'
-import { IFlightItem } from 'types/flight'
-import dayjs from 'dayjs'
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+
+import { cx } from 'styles'
 import { EndIcon, PlaneIcon } from 'assets/svgs'
+import styles from './flightModal.module.scss'
+
+import { IFlightItem } from 'types/flight'
+import getCalcTime from './getCalcTime'
+import Portal from 'components/Portal'
 
 interface IProps {
   item: IFlightItem
@@ -11,16 +16,13 @@ interface IProps {
 
 export default function FlightModal({ item, handleClickClose }: IProps) {
   const { estimatedDateTime, airport, airline, flightId, terminalId, gatenumber, elapsetime, remark } = item
+  const [isDepart, setIsDepart] = useState(true)
+  const { startDayObj, endDayObj, elapseTimeStr } = getCalcTime(isDepart, estimatedDateTime, elapsetime)
+  const location = useLocation()
 
-  // 시작시간
-  const startHourStr = estimatedDateTime.slice(0, 2)
-  const startMinStr = estimatedDateTime.slice(2, 4)
-  const startDayObj = dayjs(new Date().setHours(Number(startHourStr), Number(startMinStr)))
-
-  // 소요시간 더해서 종료시간
-  const elapseHourStr = elapsetime?.slice(0, 2)
-  const elapseMinStr = elapsetime?.slice(2, 4)
-  const endDayobj = startDayObj.add(Number(elapseHourStr), 'hour').add(Number(elapseMinStr), 'minute')
+  useEffect(() => {
+    setIsDepart(!location.pathname.startsWith('/arrive'))
+  }, [location])
 
   return (
     <Portal>
@@ -35,21 +37,22 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
           </div>
 
           <div className={styles.content}>
-            <div className={styles.date}>
-              <div className={styles.start}>{startDayObj.format('MM.DD')}</div>
-              <div className={styles.end}>{endDayobj.format('MM.DD')}</div>
-            </div>
-            <div className={styles.time}>
-              <div className={styles.start}>
-                {startHourStr}:{startMinStr}
-              </div>
-              <div className={styles.lead}>
-                {elapseHourStr}h {elapseMinStr}m
-              </div>
-              <div className={styles.end}>{endDayobj.format('HH:mm')}</div>
-            </div>
+            <section className={styles.date}>
+              <div>{startDayObj ? startDayObj.format('MM.DD') : ' '}</div>
+              <div>{endDayObj ? endDayObj.format('MM.DD') : ' '}</div>
+            </section>
 
-            <div className={styles.plane}>
+            <section className={styles.time}>
+              <div className={cx(styles.start, { [styles.active]: isDepart })}>
+                {startDayObj ? startDayObj.format('HH:mm') : ' '}
+              </div>
+              <div className={styles.lead}>{elapseTimeStr}</div>
+              <div className={cx(styles.end, { [styles.active]: !isDepart })}>
+                {endDayObj ? endDayObj.format('HH:mm') : ' '}
+              </div>
+            </section>
+
+            <section className={styles.plane}>
               <div className={styles.circle} />
               <div className={styles.line}>
                 <div className={styles.iconBox}>
@@ -57,38 +60,38 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
                 </div>
               </div>
               <div className={styles.circle} />
-            </div>
+            </section>
 
-            <div className={styles.destination}>
+            <section className={styles.destination}>
               <div className={styles.start}>인천</div>
               <div className={styles.end}>{airport}</div>
-            </div>
+            </section>
 
-            <div className={styles.info}>
-              <div className={styles.terminal}>
+            <section className={styles.infoBox}>
+              <div className={styles.info}>
                 <div>{terminalId}</div>
                 <div>터미널</div>
               </div>
-              <div className={styles.gate}>
+              <div className={styles.info}>
                 <div>{gatenumber}</div>
                 <div>게이트</div>
               </div>
-              <div className={styles.state}>
-                <div>{remark}</div>
+              <div className={styles.info}>
+                <div>{remark || ' '}</div>
                 <div>운항현황</div>
               </div>
-            </div>
+            </section>
 
-            <div className={styles.info2}>
-              <div className={styles.terminal}>
+            <section className={cx(styles.infoBox, styles.airBox)}>
+              <div className={cx(styles.info, styles.air)}>
                 <div>{airline}</div>
                 <div>항공사</div>
               </div>
-              <div className={styles.gate}>
+              <div className={cx(styles.info, styles.air)}>
                 <div>{flightId}</div>
                 <div>편명</div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </article>

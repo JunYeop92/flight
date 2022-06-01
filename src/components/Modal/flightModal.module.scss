@@ -47,8 +47,7 @@
         @include flexbox.flexbox(between, center);
         margin-bottom: 6px;
 
-        .start,
-        .end {
+        > div {
           font-size: 12px;
           color: colors.$GRAY2;
         }
@@ -60,18 +59,23 @@
         .start,
         .end {
           font-size: 30px;
-          font-weight: bold;
         }
 
         .lead {
           font-size: 12px;
           color: colors.$GRAY2;
         }
+
+        .active {
+          font-weight: bold;
+          color: colors.$BLUE;
+        }
       }
 
       .plane {
         display: flex;
         align-items: center;
+        margin-top: 20px;
 
         .circle {
           width: 15px;
@@ -104,40 +108,49 @@
         margin-top: 10px;
       }
 
-      .info {
-        @include flexbox.flexbox(between, center);
-        margin-top: 20px;
+      .infoBox {
+        @include flexbox.flexbox(center, center);
+        margin-top: 30px;
 
-        div div:first-child {
-          margin-bottom: 5px;
-          font-size: 20px;
-          font-weight: bold;
-          text-align: center;
+        .info {
+          @include flexbox.flexbox(center, center);
+          flex-direction: column;
+          width: 33%;
+          border-right: 1px solid colors.$GRAY2;
+
+          &:last-child {
+            border-right: none;
+          }
+
+          > div {
+            width: 100%;
+            text-align: center;
+          }
+
+          > div:nth-child(1) {
+            height: 25px;
+            padding-bottom: 7px;
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          > div:nth-child(2) {
+            font-size: 12px;
+            color: colors.$GRAY2;
+          }
         }
 
-        div div:last-child {
-          font-size: 12px;
-          color: colors.$GRAY2;
-          text-align: center;
+        .air {
+          width: 50%;
+
+          > div:nth-child(1) {
+            font-size: 16px;
+          }
         }
       }
 
-      .info2 {
-        @include flexbox.flexbox(between, center);
+      .airBox {
         margin-top: 20px;
-
-        div div:first-child {
-          margin-bottom: 5px;
-          font-size: 20px;
-          font-weight: bold;
-          text-align: center;
-        }
-
-        div div:last-child {
-          font-size: 12px;
-          color: colors.$GRAY2;
-          text-align: center;
-        }
       }
     }
   }

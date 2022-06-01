@@ -1,5 +1,5 @@
-import { IFlightItem } from 'types/flight'
 import styles from './flightList.module.scss'
+import { IFlightItem } from 'types/flight'
 import FlightItem from './FlightItem'
 
 interface Props {
@@ -14,7 +14,7 @@ export default function FlightList({ dataList }: Props) {
         <div className={styles.t2}>목적지</div>
         <div className={styles.t3}>항공사</div>
         <div className={styles.t4}>터미널</div>
-        <div className={styles.t5}>탑승구</div>
+        <div className={styles.t5}>게이트</div>
       </div>
 
       <ul>

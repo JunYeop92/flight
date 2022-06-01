@@ -1,7 +1,7 @@
-import FlightModal from 'components/Modal/FlightModal'
 import { useState } from 'react'
-import { IFlightItem } from 'types/flight'
 import styles from './flightItem.module.scss'
+import { IFlightItem } from 'types/flight'
+import FlightModal from 'components/Modal/FlightModal'
 
 interface IProps {
   item: IFlightItem
