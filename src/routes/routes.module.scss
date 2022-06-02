@@ -13,6 +13,7 @@
   main {
     @include flexbox.flexbox(center, center);
     flex-direction: column;
+    padding: 0 10px;
   }
 
   footer {

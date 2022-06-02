@@ -16,6 +16,11 @@ export default function Navigation() {
             도착
           </NavLink>
         </li>
+        <li>
+          <NavLink to='weather' className={({ isActive }) => cx({ [styles.active]: isActive })}>
+            날씨
+          </NavLink>
+        </li>
       </ul>
     </nav>
   )

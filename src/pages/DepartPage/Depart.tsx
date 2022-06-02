@@ -4,7 +4,7 @@ import FlightList from 'components/FlightList'
 import useTimeInterval from 'hooks/useTimeInterval'
 
 export default function Depart() {
-  const fromTime = useTimeInterval(1000 * 60, 'HHmm')
+  const fromTime = useTimeInterval(1000 * 60 * 30, 'HHmm')
   const { data } = useQuery(
     ['getFlightDepartApi', fromTime],
     () => getFlightDepartApi({ from_time: fromTime, to_time: '2400' }),

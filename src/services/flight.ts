@@ -6,7 +6,7 @@ const END_POINT = '/B551177/StatusOfPassengerFlightsOdp'
 export const getFlightArriveApi = async (params: IFlightApiParams): Promise<IFlightItem[]> => {
   const res = await axios.get(`${END_POINT}/getPassengerArrivalsOdp`, {
     params: {
-      serviceKey: process.env.REACT_APP_API_KEY,
+      serviceKey: process.env.REACT_APP_FLIGHT_API_KEY,
       ...params,
       lang: 'K',
       type: 'json',
@@ -19,7 +19,7 @@ export const getFlightArriveApi = async (params: IFlightApiParams): Promise<IFli
 export const getFlightDepartApi = async (params: IFlightApiParams): Promise<IFlightItem[]> => {
   const res = await axios.get(`${END_POINT}/getPassengerDeparturesOdp`, {
     params: {
-      serviceKey: process.env.REACT_APP_API_KEY,
+      serviceKey: process.env.REACT_APP_FLIGHT_API_KEY,
       ...params,
       lang: 'K',
       type: 'json',

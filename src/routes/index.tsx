@@ -5,6 +5,7 @@ import DepartPage from 'pages/DepartPage'
 import Navigation from 'components/Navigation/Navigation'
 import NowTime from 'components/NowTime/NowTime'
 import Title from 'components/Title/Title'
+import WeatherPage from 'pages/WeatherPage'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path='/' element={<DepartPage />} />
           <Route path='arrive' element={<ArrivePage />} />
+          <Route path='weather' element={<WeatherPage />} />
           <Route path='*' element={<div>404</div>} />
         </Routes>
       </main>
