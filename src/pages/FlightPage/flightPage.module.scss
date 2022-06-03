@@ -1,0 +1,8 @@
+@use '/src/styles/mixins/flexbox';
+
+.top {
+  @include flexbox.flexbox(between, center);
+  width: 320px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}

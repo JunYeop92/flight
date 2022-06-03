@@ -2,23 +2,28 @@
 @use '/src/styles/mixins/flexbox';
 
 .app {
-  background-color: colors.$GRAY6;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
   header {
-    margin-bottom: 15px;
     background-color: colors.$WHITE;
     border-bottom: 1px solid colors.$GRAY3;
   }
 
   main {
-    @include flexbox.flexbox(center, center);
     flex-direction: column;
+    flex-grow: 1;
     padding: 0 10px;
+    padding-top: 15px;
+    background-color: colors.$GRAY6;
+
+    @include flexbox.flexbox(start, center);
   }
 
   footer {
-    position: fixed;
-    bottom: 0;
+    // position: sticky;
+    // bottom: 0;
     width: 100%;
     background-color: colors.$WHITE;
     border-top: 1px solid colors.$GRAY3;

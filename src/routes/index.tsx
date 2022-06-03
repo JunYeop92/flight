@@ -3,7 +3,6 @@ import styles from './routes.module.scss'
 import ArrivePage from 'pages/ArrivePage'
 import DepartPage from 'pages/DepartPage'
 import Navigation from 'components/Navigation/Navigation'
-import NowTime from 'components/NowTime/NowTime'
 import Title from 'components/Title/Title'
 import WeatherPage from 'pages/WeatherPage'
 
@@ -14,7 +13,6 @@ export default function App() {
         <Title />
       </header>
       <main>
-        <NowTime />
         <Routes>
           <Route path='/' element={<DepartPage />} />
           <Route path='arrive' element={<ArrivePage />} />

@@ -13,6 +13,10 @@ li.wrapper {
     height: 35px;
     font-size: 12px;
     line-height: 35px;
+
+    &:hover {
+      background-color: colors.$LIGHT_BLUE;
+    }
   }
 
   div {

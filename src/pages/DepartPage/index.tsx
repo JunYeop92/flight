@@ -1,11 +1,10 @@
-import { Suspense } from 'react'
 import Depart from './Depart'
-import Loading from 'components/Loading/Loading'
+import FlightPage from 'pages/FlightPage'
 
 export default function DepartPage() {
   return (
-    <Suspense fallback={<Loading />}>
+    <FlightPage>
       <Depart />
-    </Suspense>
+    </FlightPage>
   )
 }
