@@ -11,6 +11,8 @@ export default function Arrive() {
     () => getFlightArriveApi({ from_time: fromTime, to_time: '2400' }),
     {
       suspense: true,
+      refetchOnWindowFocus: false,
+      staleTime: 5 * 60 * 1000,
     }
   )
 

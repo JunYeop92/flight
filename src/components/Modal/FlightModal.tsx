@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 import { cx } from 'styles'
-import { EndIcon, PlaneIcon } from 'assets/svgs'
+import { EndIcon } from 'assets/svgs'
 import styles from './flightModal.module.scss'
 
 import { IFlightItem } from 'types/flight'
 import getCalcTime from './getCalcTime'
 import Portal from 'components/Portal'
+import Plane from './Plane/Plane'
+import Destination from './Destination/Destination'
 
 interface IProps {
   item: IFlightItem
@@ -52,20 +54,8 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
               </div>
             </section>
 
-            <section className={styles.plane}>
-              <div className={styles.circle} />
-              <div className={styles.line}>
-                <div className={styles.iconBox}>
-                  <PlaneIcon />
-                </div>
-              </div>
-              <div className={styles.circle} />
-            </section>
-
-            <section className={styles.destination}>
-              <div className={styles.start}>인천</div>
-              <div className={styles.end}>{airport}</div>
-            </section>
+            <Plane />
+            <Destination isDepart={isDepart} airport={airport} />
 
             <section className={styles.infoBox}>
               <div className={styles.info}>
@@ -91,6 +81,12 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
                 <div>{flightId}</div>
                 <div>편명</div>
               </div>
+            </section>
+
+            <section className={styles.weather}>
+              <Link to={`/weather?search=${airport.split('/')[0]}`}>
+                {isDepart ? '목적지 날씨' : '출발지 날씨'} &#62;
+              </Link>
             </section>
           </div>
         </div>

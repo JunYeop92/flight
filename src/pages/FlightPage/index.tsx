@@ -1,7 +1,7 @@
 import { ReactNode, Suspense } from 'react'
 import styles from './flightPage.module.scss'
 import Loading from 'components/Loading/Loading'
-import NowTime from 'components/NowTime/NowTime'
+import NowTime from 'components/NowTime'
 import Refresh from 'components/Refresh/Refresh'
 
 interface IProps {
