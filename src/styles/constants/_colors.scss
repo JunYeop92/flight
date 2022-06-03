@@ -1,11 +1,6 @@
-// Grayscale
 $WHITE: #ffffff;
 $BLACK: #000000;
-$GRAYA: #aaaaaa;
-$GRAYD: #dddddd;
-$GRAYE: #eeeeee;
 
-// Chromatic
 $RED: #ff3b30;
 $ORANGE: #ff9500;
 $YELLOW: #ffcc00;
@@ -17,12 +12,9 @@ $INDIGO: #5856d6;
 $PURPLE: #af52de;
 $PINK: #ff2d55;
 
-$BIG_TITLE: #1f315b;
-$TASKS_TITLE: #8f99bf;
-$TASK_ITEM_TITLE: #4f566f;
 $OVERLAY: rgba(0, 0, 0, 50.2%);
 
-// Apple System Color
+// Apple System Gray Color
 $GRAY: #8e8e93;
 $GRAY2: #aeaeb2;
 $GRAY3: #c7c7cc;
@@ -31,3 +23,7 @@ $GRAY5: #e5e5ea;
 $GRAY6: #f2f2f7;
 $DARK_GRAY3: #48484a;
 $DARK_GRAY4: #3a3a3c;
+
+// $LIST: ($ORANGE, $YELLOW, $GREEN, $TEAL, $INDIGO, $PURPLE);
+// $KEY: random(6);
+// $RANDOM_COLOR: nth($LIST, $KEY);

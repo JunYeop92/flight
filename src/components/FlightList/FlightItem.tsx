@@ -3,6 +3,7 @@ import styles from './flightItem.module.scss'
 import { IFlightItem } from 'types/flight'
 import FlightModal from 'components/Modal/FlightModal'
 import { cx } from 'styles'
+import getRandomColorName from './getRandomColorName'
 
 interface IProps {
   item: IFlightItem
@@ -12,13 +13,14 @@ interface IProps {
 export default function FlightItem({ item, isAlone = true }: IProps) {
   const { estimatedDateTime, airport, airline, terminalId, gatenumber } = item
   const [isOpen, setIsOpen] = useState(false)
+  const colorName = getRandomColorName()
 
   const handleClickOpen = () => setIsOpen(true)
   const handleClickClose = () => setIsOpen(false)
 
   return (
     <>
-      <li className={cx(styles.wrapper, { [styles.alone]: isAlone })}>
+      <li className={cx(styles.wrapper, styles[colorName], { [styles.alone]: isAlone })}>
         <button type='button' onClick={handleClickOpen}>
           <div className={styles.t1}>
             {estimatedDateTime.slice(0, 2)}:{estimatedDateTime.slice(2, 4)}
