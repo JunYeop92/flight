@@ -17,11 +17,13 @@ export default function FlightList({ dataList }: Props) {
         <div className={styles.t5}>게이트</div>
       </div>
 
-      <ul>
-        {dataList.map((item) => (
-          <FlightItem key={`${item.estimatedDateTime}-${item.flightId}`} item={item} />
-        ))}
-      </ul>
+      <div className={styles.flightWrapper}>
+        <ul>
+          {dataList.map((item) => (
+            <FlightItem key={`${item.estimatedDateTime}-${item.flightId}`} item={item} />
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }
