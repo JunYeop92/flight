@@ -2,12 +2,14 @@ import { useState } from 'react'
 import styles from './flightItem.module.scss'
 import { IFlightItem } from 'types/flight'
 import FlightModal from 'components/Modal/FlightModal'
+import { cx } from 'styles'
 
 interface IProps {
   item: IFlightItem
+  isAlone?: boolean
 }
 
-export default function FlightItem({ item }: IProps) {
+export default function FlightItem({ item, isAlone = true }: IProps) {
   const { estimatedDateTime, airport, airline, terminalId, gatenumber } = item
   const [isOpen, setIsOpen] = useState(false)
 
@@ -16,7 +18,7 @@ export default function FlightItem({ item }: IProps) {
 
   return (
     <>
-      <li className={styles.wrapper}>
+      <li className={cx(styles.wrapper, { [styles.alone]: isAlone })}>
         <button type='button' onClick={handleClickOpen}>
           <div className={styles.t1}>
             {estimatedDateTime.slice(0, 2)}:{estimatedDateTime.slice(2, 4)}

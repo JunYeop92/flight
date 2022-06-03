@@ -7,7 +7,6 @@
   width: 320px;
   height: 100%;
   margin-bottom: 15px;
-  background-color: colors.$WHITE;
   border-radius: 5px;
 
   .title {
@@ -54,8 +53,9 @@
     position: relative;
     width: 100%;
     height: 100%;
+    margin-top: 5px;
 
-    ul {
+    .list {
       position: absolute;
       width: 100%;
       height: 100%;

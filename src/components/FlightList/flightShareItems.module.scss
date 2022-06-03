@@ -1,0 +1,17 @@
+@use '/src/styles/constants/colors';
+
+.wrapper {
+  position: relative;
+  margin-bottom: 10px;
+
+  &::after {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    display: block;
+    width: 2px;
+    height: calc(100% + 2px);
+    content: '';
+    background-color: colors.$TEAL;
+  }
+}
