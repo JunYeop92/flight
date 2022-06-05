@@ -1,6 +1,5 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/flexbox';
-@use '/src/styles/mixins/position';
 @use '/src/styles/mixins/responsive';
 
 .overlay {
@@ -38,81 +37,6 @@
     .content {
       padding: 10px;
 
-      .date {
-        @include flexbox.flexbox(between, center);
-        padding-left: 4px;
-        margin-bottom: 6px;
-
-        > div {
-          font-size: 12px;
-          color: colors.$GRAY2;
-        }
-      }
-
-      .time {
-        @include flexbox.flexbox(between, center);
-
-        .start,
-        .end {
-          font-size: 30px;
-        }
-
-        .lead {
-          font-size: 12px;
-          color: colors.$GRAY2;
-        }
-
-        .active {
-          font-weight: bold;
-          color: colors.$BLUE;
-        }
-      }
-
-      .infoBox {
-        @include flexbox.flexbox(center, center);
-        margin-top: 30px;
-
-        .info {
-          @include flexbox.flexbox(center, center);
-          flex-direction: column;
-          width: 33%;
-          border-right: 1px solid colors.$GRAY2;
-
-          &:last-child {
-            border-right: none;
-          }
-
-          > div {
-            width: 100%;
-            text-align: center;
-          }
-
-          > div:nth-child(1) {
-            height: 18px;
-            margin-bottom: 2px;
-            font-size: 18px;
-            font-weight: bold;
-          }
-
-          > div:nth-child(2) {
-            font-size: 12px;
-            color: colors.$GRAY2;
-          }
-        }
-
-        .air {
-          width: 50%;
-
-          > div:nth-child(1) {
-            font-size: 16px;
-          }
-        }
-      }
-
-      .airBox {
-        margin-top: 20px;
-      }
-
       .weather {
         @include flexbox.flexbox(end, center);
         margin-top: 30px;
@@ -139,39 +63,6 @@
       }
 
       .content {
-        .date {
-          > div {
-            font-size: 16px;
-          }
-        }
-
-        .time {
-          .start,
-          .end {
-            font-size: 50px;
-          }
-
-          .lead {
-            font-size: 16px;
-          }
-        }
-
-        .infoBox {
-          margin-top: 40px;
-
-          .info {
-            > div:nth-child(1) {
-              height: 22px;
-              margin-bottom: 5px;
-              font-size: 22px;
-            }
-
-            > div:nth-child(2) {
-              font-size: 14px;
-            }
-          }
-        }
-
         .weather {
           font-size: 20px;
         }
