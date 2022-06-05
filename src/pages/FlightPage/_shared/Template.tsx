@@ -1,8 +1,8 @@
 import { ReactNode, Suspense } from 'react'
-import styles from './flightPage.module.scss'
+import styles from './template.module.scss'
 import Loading from 'components/Loading/Loading'
-import NowTime from 'components/NowTime'
-import Refresh from 'components/Refresh/Refresh'
+import NowTime from './NowTime/NowTime'
+import Refresh from './Refresh/Refresh'
 
 interface IProps {
   children: ReactNode

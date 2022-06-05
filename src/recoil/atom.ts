@@ -5,8 +5,3 @@ export const fromTimeState = atom({
   key: 'fromTimeState',
   default: dayjs().format('HHmm'),
 })
-
-export const destinationState = atom({
-  key: 'destinationState',
-  default: '',
-})

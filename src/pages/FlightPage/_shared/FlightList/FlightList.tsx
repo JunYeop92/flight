@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+
 import styles from './flightList.module.scss'
 import { IFlightItem } from 'types/flight'
-import FlightItem from './FlightItem'
-import FlightShareItems from './FlightShareItems'
+import FlightItem from './FlightItem/FlightItem'
+import FlightShareItems from './FlightItem/FlightShareItems'
 
 interface IProps {
   dataList: IFlightItem[]

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-import { cx } from 'styles'
+import cx from 'classnames'
 import { EndIcon } from 'assets/svgs'
 import styles from './flightModal.module.scss'
 
 import { IFlightItem } from 'types/flight'
-import getCalcTime from './getCalcTime'
+import { getCalcTime } from 'utils'
 import Portal from 'components/Portal'
 import Plane from './Plane/Plane'
 import Destination from './Destination/Destination'

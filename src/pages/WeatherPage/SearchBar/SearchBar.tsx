@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, FormEvent, ChangeEvent } from 'react'
-import styles from './searchBar.module.scss'
-import { SearchIcon } from 'assets/svgs'
 import { useSearchParams } from 'react-router-dom'
+import { SearchIcon } from 'assets/svgs'
+import styles from './searchBar.module.scss'
 
 export default function SearchBar() {
   const inputRef = useRef<HTMLInputElement>(null)

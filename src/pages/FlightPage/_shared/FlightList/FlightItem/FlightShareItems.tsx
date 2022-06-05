@@ -1,8 +1,8 @@
-import { cx } from 'styles'
+import cx from 'classnames'
+import { getRandomColorName } from 'utils'
+import styles from './flightShareItems.module.scss'
 import { IFlightItem } from 'types/flight'
 import FlightItem from './FlightItem'
-import styles from './flightShareItems.module.scss'
-import getRandomColorName from './getRandomColorName'
 
 interface IProps {
   items: IFlightItem[]

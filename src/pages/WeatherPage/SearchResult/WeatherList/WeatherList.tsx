@@ -1,14 +1,14 @@
 import { useQuery } from 'react-query'
 import { getWeatherApi } from 'services/weather'
-import styles from './weahterList.module.scss'
-import WeatherItme from './WeatherItme'
+import styles from './weatherList.module.scss'
+import WeatherItme from './WeatherItem/WeatherItem'
 
 interface IProps {
   lat: number
   lon: number
 }
 
-export default function WeahterList({ lat, lon }: IProps) {
+export default function WeatherList({ lat, lon }: IProps) {
   const { data } = useQuery(['getWeatherApi', lat, lon], () => getWeatherApi({ lat, lon }), {
     suspense: true,
     refetchOnWindowFocus: false,

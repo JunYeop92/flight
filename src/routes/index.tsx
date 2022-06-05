@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import styles from './routes.module.scss'
-import ArrivePage from 'pages/ArrivePage'
-import DepartPage from 'pages/DepartPage'
+
 import Navigation from 'components/Navigation/Navigation'
 import Title from 'components/Title/Title'
-import WeatherPage from 'pages/WeatherPage'
+import DepartPage from 'pages/FlightPage/DepartPage'
+import ArrivePage from 'pages/FlightPage/ArrivePage'
+import WeatherPage from 'pages/WeatherPage/WeatherPage'
 
 export default function App() {
   return (

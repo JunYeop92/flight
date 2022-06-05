@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import cx from 'classnames'
+import { getRandomColorName } from 'utils'
+
 import styles from './flightItem.module.scss'
 import { IFlightItem } from 'types/flight'
-import FlightModal from 'components/Modal/FlightModal'
-import { cx } from 'styles'
-import getRandomColorName from './getRandomColorName'
+import FlightModal from '../Modal/FlightModal'
 
 interface IProps {
   item: IFlightItem

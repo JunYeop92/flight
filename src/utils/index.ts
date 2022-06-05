@@ -1,6 +1,12 @@
 import dayjs from 'dayjs'
 
-const getCalcTime = (isDepart: boolean, estimatedDateTime: string, elapsetime: string) => {
+export const getRandomColorName = () => {
+  const colorScale = ['green', 'orange', 'yellow', 'teal', 'indigo', 'purple']
+  const randomKey = Math.floor(Math.random() * colorScale.length)
+  return colorScale[randomKey]
+}
+
+export const getCalcTime = (isDepart: boolean, estimatedDateTime: string, elapsetime: string) => {
   // 출발시간 아니면 도착시간
   const estimatedHour = Number(estimatedDateTime.slice(0, 2))
   const estimatedMin = Number(estimatedDateTime.slice(2, 4))
@@ -27,5 +33,3 @@ const getCalcTime = (isDepart: boolean, estimatedDateTime: string, elapsetime: s
 
   return { startDayObj, endDayObj, elapseTimeStr }
 }
-
-export default getCalcTime
