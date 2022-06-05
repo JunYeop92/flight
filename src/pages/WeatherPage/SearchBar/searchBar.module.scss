@@ -1,5 +1,6 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/responsive';
 
 .form {
   display: flex;
@@ -11,7 +12,6 @@
     flex-grow: 1;
     min-width: 0;
     padding: 5px;
-    font-size: 1.2rem;
     background-color: colors.$WHITE;
   }
 
@@ -25,6 +25,23 @@
 
     svg {
       width: 20px;
+    }
+  }
+
+  @include responsive.after(SD) {
+    height: 50px;
+    line-height: 50px;
+
+    input[type='search'] {
+      font-size: 18px;
+    }
+
+    button[type='submit'] {
+      width: 40px;
+
+      svg {
+        width: 25px;
+      }
     }
   }
 }

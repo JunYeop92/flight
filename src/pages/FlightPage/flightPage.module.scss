@@ -1,8 +1,27 @@
 @use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/responsive';
 
 .top {
   @include flexbox.flexbox(between, center);
-  width: 320px;
+  width: 100%;
   padding-right: 5px;
   margin-bottom: 10px;
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  @include responsive.after(SD) {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+  }
 }

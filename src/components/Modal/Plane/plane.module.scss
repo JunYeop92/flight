@@ -1,5 +1,6 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/position';
+@use '/src/styles/mixins/responsive';
 
 .wrapper {
   display: flex;
@@ -27,6 +28,24 @@
       svg {
         display: block;
         transform: rotate(90deg);
+      }
+    }
+  }
+
+  @include responsive.after(SD) {
+    .circle {
+      width: 20px;
+      height: 20px;
+    }
+
+    .line {
+      border-top: 2px solid colors.$GRAY2;
+
+      .iconBox {
+        svg {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }

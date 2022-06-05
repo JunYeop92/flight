@@ -1,6 +1,12 @@
 @use '/src/styles/constants/colors';
+@use '/src/styles/mixins/responsive';
 
 .wrapper {
+  margin-right: 10px;
   font-size: 14px;
   color: colors.$GRAY;
+
+  @include responsive.after(SD) {
+    font-size: 18px;
+  }
 }

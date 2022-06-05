@@ -1,6 +1,7 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/flexbox';
 @use '/src/styles/mixins/position';
+@use '/src/styles/mixins/responsive';
 
 .overlay {
   position: fixed;
@@ -30,12 +31,7 @@
 
       h3 {
         font-size: 18px;
-      }
-
-      button {
-        svg {
-          display: block;
-        }
+        font-weight: bold;
       }
     }
 
@@ -44,6 +40,7 @@
 
       .date {
         @include flexbox.flexbox(between, center);
+        padding-left: 4px;
         margin-bottom: 6px;
 
         > div {
@@ -91,8 +88,8 @@
           }
 
           > div:nth-child(1) {
-            height: 25px;
-            padding-bottom: 7px;
+            height: 18px;
+            margin-bottom: 2px;
             font-size: 18px;
             font-weight: bold;
           }
@@ -118,13 +115,65 @@
 
       .weather {
         @include flexbox.flexbox(end, center);
-        margin-top: 20px;
+        margin-top: 30px;
 
         a {
-          padding: 10px 5px;
+          padding: 8px 15px;
           color: colors.$WHITE;
           background-color: colors.$BLUE;
           border-radius: 5px;
+        }
+      }
+    }
+
+    @include responsive.after(SD) {
+      width: 700px;
+
+      .title {
+        padding: 15px 12px;
+
+        h3 {
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+
+      .content {
+        .date {
+          > div {
+            font-size: 16px;
+          }
+        }
+
+        .time {
+          .start,
+          .end {
+            font-size: 50px;
+          }
+
+          .lead {
+            font-size: 16px;
+          }
+        }
+
+        .infoBox {
+          margin-top: 40px;
+
+          .info {
+            > div:nth-child(1) {
+              height: 22px;
+              margin-bottom: 5px;
+              font-size: 22px;
+            }
+
+            > div:nth-child(2) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .weather {
+          font-size: 20px;
         }
       }
     }

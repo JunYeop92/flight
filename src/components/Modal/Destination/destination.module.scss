@@ -1,7 +1,12 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/responsive';
 
 .wrapper {
   @include flexbox.flexbox(between, center);
   margin-top: 20px;
+
+  @include responsive.after(SD) {
+    font-size: 22px;
+  }
 }

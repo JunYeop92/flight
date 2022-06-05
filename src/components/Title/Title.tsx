@@ -1,5 +1,11 @@
 import styles from './title.module.scss'
+import logo from 'assets/logo/ia.jpg'
 
 export default function Title() {
-  return <h1 className={styles.title}>인천공항 오늘 운항 스케줄</h1>
+  return (
+    <h1 className={styles.title}>
+      <img src={logo} alt='incheon-airport' />
+      인천공항
+    </h1>
+  )
 }

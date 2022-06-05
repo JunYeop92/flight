@@ -23,7 +23,7 @@ export default function SearchBar() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <input type='search' placeholder='Search City' ref={inputRef} value={value} onChange={handleChange} />
+      <input type='search' placeholder='도시를 입력하세요.' ref={inputRef} value={value} onChange={handleChange} />
       <button type='submit'>
         <SearchIcon fill='currentColor' />
       </button>

@@ -12,8 +12,11 @@ export default function FlightPage({ children }: IProps) {
   return (
     <>
       <div className={styles.top}>
-        <NowTime />
-        <Refresh />
+        <h2>오늘 운항 시간표</h2>
+        <div className={styles.time}>
+          <NowTime />
+          <Refresh />
+        </div>
       </div>
       <Suspense fallback={<Loading />}>{children}</Suspense>
     </>

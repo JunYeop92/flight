@@ -4,7 +4,7 @@ import styles from './navigation.module.scss'
 
 export default function Navigation() {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.wrapper}>
       <ul>
         <li>
           <NavLink to='/' className={({ isActive }) => cx({ [styles.active]: isActive })}>

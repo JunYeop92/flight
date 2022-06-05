@@ -11,14 +11,19 @@ export default function App() {
     <div className={styles.app}>
       <header>
         <Title />
+        <div className={styles.nav}>
+          <Navigation />
+        </div>
       </header>
       <main>
-        <Routes>
-          <Route path='/' element={<DepartPage />} />
-          <Route path='arrive' element={<ArrivePage />} />
-          <Route path='weather' element={<WeatherPage />} />
-          <Route path='*' element={<div>404</div>} />
-        </Routes>
+        <div className={styles.content}>
+          <Routes>
+            <Route path='/' element={<DepartPage />} />
+            <Route path='arrive' element={<ArrivePage />} />
+            <Route path='weather' element={<WeatherPage />} />
+            <Route path='*' element={<div>404</div>} />
+          </Routes>
+        </div>
       </main>
       <footer>
         <Navigation />
