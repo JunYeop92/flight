@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/proxy/*"
-  to = "http://apis.data.go.kr"  
+  to = "http://apis.data.go.kr/B551177/StatusOfPassengerFlightsOdp/:splat"  
   status = 200
   force = true
