@@ -18,12 +18,8 @@ interface IProps {
 
 export default function FlightModal({ item, handleClickClose }: IProps) {
   const { estimatedDateTime, airport, airline, flightId, terminalId, gatenumber, elapsetime, remark } = item
-  const [isDepart, setIsDepart] = useState(true)
   const location = useLocation()
-
-  useEffect(() => {
-    setIsDepart(!location.pathname.startsWith('/arrive'))
-  }, [location])
+  const isDepart = !location.pathname.startsWith('/arrive')
 
   return (
     <Portal>
