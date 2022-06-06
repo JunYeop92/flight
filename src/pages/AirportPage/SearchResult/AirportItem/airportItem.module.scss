@@ -1,0 +1,53 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/responsive';
+
+.wrapper {
+  button {
+    width: 100%;
+    @include flexbox.flexbox(between, center);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: colors.$WHITE;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: colors.$LIGHT_BLUE2;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .info {
+      display: flex;
+
+      > div {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: colors.$GRAY5;
+        border-radius: 5px;
+      }
+
+      .heart {
+        margin-right: 5px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 4px;
+        }
+      }
+
+      .comment {
+        svg {
+          width: 18px;
+          height: 18px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

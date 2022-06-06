@@ -1,4 +1,4 @@
-import { axios } from 'hooks/worker'
+import axios from 'axios'
 import { ICoord, IGeoRes, IWeatherItem } from 'types/weather'
 
 const FORECAST_END_POINT = 'https://api.openweathermap.org/data/2.5/forecast'

@@ -15,6 +15,7 @@ export default function Depart() {
       staleTime: 5 * 60 * 1000,
     }
   )
+
   if (!data) return null
   return <FlightList dataList={data} />
 }

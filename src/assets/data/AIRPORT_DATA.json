@@ -1,0 +1,1626 @@
+[
+  {
+     "name":"Schiphol Airport",
+     "nameKo":"스키폴 공항",
+     "iata":"AMS",
+     "countryName":"Netherlands",
+     "countryNameKo":"네덜란드",
+     "cityName":"Amsterdam",
+     "cityNameKo":"암스테르담"
+  },
+  {
+     "name":"Tribhuvan Airport",
+     "nameKo":"트리부후반 공항",
+     "iata":"KTM",
+     "countryName":"Nepal",
+     "countryNameKo":"네팔",
+     "cityName":"Kathmandu",
+     "cityNameKo":"카트만두"
+  },
+  {
+     "name":"Oslo Airport",
+     "nameKo":"오슬로 공항",
+     "iata":"OSL",
+     "countryName":"Norway",
+     "countryNameKo":"노르웨이",
+     "cityName":"Oslo",
+     "cityNameKo":"오슬로"
+  },
+  {
+     "name":"La Tontouta International Airport",
+     "nameKo":"라 톤투타 국제공항",
+     "iata":"NOU",
+     "countryName":"New Caledonia",
+     "countryNameKo":"뉴칼레도니아",
+     "cityName":"Noumea",
+     "cityNameKo":"누메아"
+  },
+  {
+     "name":"Auckland International Airport",
+     "nameKo":"오클랜드 국제공항",
+     "iata":"AKL",
+     "countryName":"New Zealand",
+     "countryNameKo":"뉴질랜드",
+     "cityName":"Auckland",
+     "cityNameKo":"오클랜드"
+  },
+  {
+     "name":"Kaohsiung International Airport",
+     "nameKo":"카오징 국제공항",
+     "iata":"KHH",
+     "countryName":"Chinese Taipei",
+     "countryNameKo":"대만",
+     "cityName":"Kaohsiung",
+     "cityNameKo":"가오슝"
+  },
+  {
+     "name":"Taiwan Taoyuan International Airport ",
+     "nameKo":"타이완 타오유완 국제공항 ",
+     "iata":"TPE",
+     "countryName":"Chinese Taipei",
+     "countryNameKo":"대만",
+     "cityName":"Taipei",
+     "cityNameKo":"타이페이"
+  },
+  {
+     "name":"Copenhagen Airport",
+     "nameKo":"코펜하겐 지역공항 ",
+     "iata":"CPH",
+     "countryName":"Denmark",
+     "countryNameKo":"덴마크",
+     "cityName":"Copenhagen",
+     "cityNameKo":"코펜하겐"
+  },
+  {
+     "name":"Munich International Airport",
+     "nameKo":"뮌헨 국제공항",
+     "iata":"MUC",
+     "countryName":"Germany",
+     "countryNameKo":"독일",
+     "cityName":"Munich",
+     "cityNameKo":"뮌헨"
+  },
+  {
+     "name":"Cologne Bonn Airport",
+     "nameKo":"쾰른 본 공항",
+     "iata":"CGN",
+     "countryName":"Germany",
+     "countryNameKo":"독일",
+     "cityName":"Cologne",
+     "cityNameKo":"쾰른"
+  },
+  {
+     "name":"Frankfurt International Airport ",
+     "nameKo":"프랑크푸르트 국제공항 ",
+     "iata":"FRA",
+     "countryName":"Germany",
+     "countryNameKo":"독일",
+     "cityName":"Frankfurt",
+     "cityNameKo":"프랑크푸르트"
+  },
+  {
+     "iata":"VTE",
+     "cityNameKo":"비엔티안"
+  },
+  {
+     "name":"Novosibirsk Tolmachevo Airport",
+     "nameKo":"노보시비르스크 공항 ",
+     "iata":"OVB",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Novosibirsk",
+     "cityNameKo":"노보시비르스크"
+  },
+  {
+     "name":"Sheremetyevo International Airport",
+     "nameKo":"세레메티에포 국제공항",
+     "iata":"SVO",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Moscow",
+     "cityNameKo":"모스크바"
+  },
+  {
+     "name":"Vladivostok International Airport",
+     "nameKo":"블라디보스토크 국제공항",
+     "iata":"VVO",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Vladivostok",
+     "cityNameKo":"블라디보스토크"
+  },
+  {
+     "name":"Yuzhno-Sakhalinsk Airport",
+     "nameKo":"유즈노 사헐린스크 공항",
+     "iata":"UUS",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Yuzhno-Sakhalinsk",
+     "cityNameKo":"사할린"
+  },
+  {
+     "name":"Pulkovo Airport",
+     "nameKo":"플코보 공항",
+     "iata":"LED",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"St Petersburg",
+     "cityNameKo":"상트페테르부르크"
+  },
+  {
+     "name":"Yakutsk Airport",
+     "nameKo":"야쿠츠크 공항",
+     "iata":"YKS",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Yakutsk",
+     "cityNameKo":"야쿠츠크"
+  },
+  {
+     "name":"Irkutsk International Airport",
+     "nameKo":"이르쿠츠크 국제공항",
+     "iata":"IKT",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Irkutsk",
+     "cityNameKo":"이르쿠츠크"
+  },
+  {
+     "name":"Novy Airport",
+     "nameKo":"노비 공항",
+     "iata":"KHV",
+     "countryName":"Russia",
+     "countryNameKo":"러시아",
+     "cityName":"Khabarovsk",
+     "cityNameKo":"하바로프스크"
+  },
+  {
+     "name":"Beirut International Airport ",
+     "nameKo":"베이루트 국제공항 ",
+     "iata":"BEY",
+     "countryName":"Lebanon",
+     "countryNameKo":"레바논",
+     "cityName":"Beirut",
+     "cityNameKo":"베이루트"
+  },
+  {
+     "name":"Luxembourg International Airport ",
+     "nameKo":"뤽상부르 국제공항 ",
+     "iata":"LUX",
+     "countryName":"Luxembourg",
+     "countryNameKo":"룩셈부르크",
+     "cityName":"Luxembourg",
+     "cityNameKo":"룩셈부르크"
+  },
+  {
+     "name":"Kota Kinabalu International Airport",
+     "nameKo":"코타키나발루 국제공항",
+     "iata":"BKI",
+     "countryName":"Malaysia",
+     "countryNameKo":"말레이시아",
+     "cityName":"Kota Kinabalu",
+     "cityNameKo":"코타키나발루"
+  },
+  {
+     "name":"Kuala Lumpur International Airport",
+     "nameKo":"콸라룸푸르 국제공항",
+     "iata":"KUL",
+     "countryName":"Malaysia",
+     "countryNameKo":"말레이시아",
+     "cityName":"Kuala Lumpur",
+     "cityNameKo":"쿠알라룸푸르"
+  },
+  {
+     "name":"Penang International Airport",
+     "nameKo":"페낭 국제공항",
+     "iata":"PEN",
+     "countryName":"Malaysia",
+     "countryNameKo":"말레이시아",
+     "cityName":"Penang",
+     "cityNameKo":"페낭"
+  },
+  {
+     "name":"Male International Airport",
+     "nameKo":"메일 국제공항",
+     "iata":"MLE",
+     "countryName":"Maldives",
+     "countryNameKo":"몰디브",
+     "cityName":"Male",
+     "cityNameKo":"말레"
+  },
+  {
+     "name":"Chinggis Khaan International Airport",
+     "nameKo":"칭지스 칸 국제공항",
+     "iata":"ULN",
+     "countryName":"Mongolia",
+     "countryNameKo":"몽고",
+     "cityName":"Ulaanbaatar",
+     "cityNameKo":"울란바토르"
+  },
+  {
+     "name":"Antonio Borja Won Pat International Airport ",
+     "nameKo":"안토니오 보르냐 원 팟 국제공항",
+     "iata":"GUM",
+     "countryName":"Guam",
+     "countryNameKo":"괌",
+     "cityName":"Hagatna",
+     "cityNameKo":"괌"
+  },
+  {
+     "name":"John F Kennedy International Airport",
+     "nameKo":"존 F. 케네디 국제공항",
+     "iata":"JFK",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"New York NY",
+     "cityNameKo":"뉴욕"
+  },
+  {
+     "name":"Newark Liberty International Airport",
+     "nameKo":"뉴왁 리버티 국제공항",
+     "iata":"EWR",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Newark NJ",
+     "cityNameKo":"뉴욕/뉴어크"
+  },
+  {
+     "name":"Dallas Fort Worth International Airport",
+     "nameKo":"달라스 포츠워스 국제공항",
+     "iata":"DFW",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Dallas/Fort Worth TX",
+     "cityNameKo":"댈러스"
+  },
+  {
+     "name":"Detroit Metropolitan Wayne County Airport",
+     "nameKo":"디트로이트 메트로폴리탄 웨인 카운티 공항",
+     "iata":"DTW",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Detroit MI",
+     "cityNameKo":"디트로이트"
+  },
+  {
+     "name":"Mccarran International Airport",
+     "nameKo":"맥커란 국제공항",
+     "iata":"LAS",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Las Vegas NV",
+     "cityNameKo":"라스베이거스"
+  },
+  {
+     "name":"Los Angeles International Airport",
+     "nameKo":"로스앤젤레스 국제공항",
+     "iata":"LAX",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Los Angeles CA",
+     "cityNameKo":"로스앤젤레스"
+  },
+  {
+     "name":"Miami International Airport",
+     "nameKo":"마이애미 국제공항",
+     "iata":"MIA",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Miami FL",
+     "cityNameKo":"마이애미"
+  },
+  {
+     "name":"Memphis International Airport",
+     "nameKo":"멤피스 국제공항",
+     "iata":"MEM",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Memphis TN",
+     "cityNameKo":"멤피스"
+  },
+  {
+     "name":"Saipan International Airport",
+     "nameKo":"사이판 섬 국제공항",
+     "iata":"SPN",
+     "countryName":"Northern Mariana Islands",
+     "countryNameKo":"북마리아나제도",
+     "cityName":"Saipan",
+     "cityNameKo":"사이판"
+  },
+  {
+     "name":"San Francisco International Airport",
+     "nameKo":"산프란시스코 국제공항",
+     "iata":"SFO",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"San Francisco CA",
+     "cityNameKo":"샌프란시스코"
+  },
+  {
+     "name":"Seattle Tacoma International Airport",
+     "nameKo":"시애틀 타코마 국제공항",
+     "iata":"SEA",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Seattle WA",
+     "cityNameKo":"시애틀"
+  },
+  {
+     "name":"OHare International Airport",
+     "nameKo":"오헤어 국제공항",
+     "iata":"ORD",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Chicago IL",
+     "cityNameKo":"시카고"
+  },
+  {
+     "name":"Hartsfield-Jackson Atlanta International Airport",
+     "nameKo":"하츠필드 잭슨 애틀랜타 국제공항",
+     "iata":"ATL",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Atlanta GA",
+     "cityNameKo":"애틀랜타"
+  },
+  {
+     "name":"Ted Stevens International Airport ",
+     "nameKo":"테드 스티븐스 국제공항 ",
+     "iata":"ANC",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Anchorage AK",
+     "cityNameKo":"앵커리지"
+  },
+  {
+     "iata":"ILN",
+     "cityNameKo":"에어본  에어파크"
+  },
+  {
+     "name":"Washington Dulles International Airport",
+     "nameKo":"워싱턴 덜레스 국제공항",
+     "iata":"IAD",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Washington DC",
+     "cityNameKo":"워싱턴"
+  },
+  {
+     "name":"Indianapolis International Airport",
+     "nameKo":"인디애나폴리스 국제공항",
+     "iata":"IND",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Indianapolis IN",
+     "cityNameKo":"인디애나폴리스"
+  },
+  {
+     "name":"Philadelphia International Airport",
+     "nameKo":"필라델피아 국제공항",
+     "iata":"PHL",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Philadelphia PA",
+     "cityNameKo":"필라델피아"
+  },
+  {
+     "name":"Honolulu International Airport",
+     "nameKo":"호놀룰루 국제공항",
+     "iata":"HNL",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Honolulu HI",
+     "cityNameKo":"호놀룰루"
+  },
+  {
+     "name":"Hobby Airport",
+     "nameKo":"하비 공항",
+     "iata":"HOU",
+     "countryName":"United States",
+     "countryNameKo":"미국",
+     "cityName":"Houston TX",
+     "cityNameKo":"휴스턴"
+  },
+  {
+     "name":"Mingaladon Airport",
+     "nameKo":"밍갈라돈 공항",
+     "iata":"RGN",
+     "countryName":"Myanmar",
+     "countryNameKo":"버마",
+     "cityName":"Yangon",
+     "cityNameKo":"양곤"
+  },
+  {
+     "name":"Bahrain International Airport",
+     "nameKo":"바레인 국제공항",
+     "iata":"BAH",
+     "countryName":"Bahamas",
+     "countryNameKo":"바하마",
+     "cityName":"Bahrain",
+     "cityNameKo":"바레인"
+  },
+  {
+     "iata":"DAC",
+     "cityNameKo":"다카"
+  },
+  {
+     "name":"Simon Bolivar International Airport ",
+     "nameKo":"시몬 볼리바 국제공항 ",
+     "iata":"CCS",
+     "countryName":"Venezuela",
+     "countryNameKo":"베네수엘라",
+     "cityName":"Caracas",
+     "cityNameKo":"마이케티아"
+  },
+  {
+     "name":"Da Nang International Airport",
+     "nameKo":"다낭 국제공항",
+     "iata":"DAD",
+     "countryName":"Viet Nam",
+     "countryNameKo":"베트남",
+     "cityName":"Da Nang",
+     "cityNameKo":"다낭"
+  },
+  {
+     "name":"Noi bai International Airport",
+     "nameKo":"노이 바이 공항",
+     "iata":"HAN",
+     "countryName":"Viet Nam",
+     "countryNameKo":"베트남",
+     "cityName":"Ha Noi",
+     "cityNameKo":"하노이"
+  },
+  {
+     "name":"Tan Son Nhat Airport",
+     "nameKo":"탄 손 낫 공항 ",
+     "iata":"SGN",
+     "countryName":"Viet Nam",
+     "countryNameKo":"베트남",
+     "cityName":"Ho Chi Minh City",
+     "cityNameKo":"호찌민"
+  },
+  {
+     "name":"Brussels Airport ",
+     "nameKo":"브뤼셀 내셔널 공항",
+     "iata":"BRU",
+     "countryName":"Belgium",
+     "countryNameKo":"벨기에",
+     "cityName":"Brussels",
+     "cityNameKo":"브뤼셀"
+  },
+  {
+     "name":"Sofia Airport ",
+     "nameKo":"소피아 공항",
+     "iata":"SOF",
+     "countryName":"Bulgaria",
+     "countryNameKo":"불가리아",
+     "cityName":"Sofia",
+     "cityNameKo":"소피아"
+  },
+  {
+     "name":"Guarulhos International Airport",
+     "nameKo":"과룰하스 국제공항",
+     "iata":"GRU",
+     "countryName":"Brazil",
+     "countryNameKo":"브라질",
+     "cityName":"Sao Paulo",
+     "cityNameKo":"상파울루"
+  },
+  {
+     "iata":"BWN",
+     "cityNameKo":"반다르스리브가완"
+  },
+  {
+     "name":"Bandaranaike International Airport",
+     "nameKo":"밴다라나이크 국제공항",
+     "iata":"CMB",
+     "countryName":"Sri Lanka",
+     "countryNameKo":"스리랑카",
+     "cityName":"Colombo",
+     "cityNameKo":"콜롬보"
+  },
+  {
+     "name":"Landvetter Airport ",
+     "nameKo":"란베터 공항",
+     "iata":"GOT",
+     "countryName":"Sweden",
+     "countryNameKo":"스웨덴",
+     "cityName":"Gothenburg",
+     "cityNameKo":"고테버그"
+  },
+  {
+     "iata":"STO",
+     "cityNameKo":"스톡홀름"
+  },
+  {
+     "name":"EuroAirport Basel-Mulhouse-Freiburg",
+     "nameKo":"유로공항",
+     "iata":"BSL",
+     "countryName":"Switzerland",
+     "countryNameKo":"스위스",
+     "cityName":"Basel",
+     "cityNameKo":"바젤"
+  },
+  {
+     "name":"Zurich International Airport",
+     "nameKo":"취리히 국제공항",
+     "iata":"ZRH",
+     "countryName":"Switzerland",
+     "countryNameKo":"스위스",
+     "cityName":"Zurich",
+     "cityNameKo":"취리히"
+  },
+  {
+     "name":"Madrid Barajas Airport",
+     "nameKo":"마드리드 바라쟈스 공항",
+     "iata":"MAD",
+     "countryName":"Spain",
+     "countryNameKo":"스페인",
+     "cityName":"Madrid",
+     "cityNameKo":"마드리드"
+  },
+  {
+     "name":"Barcelona International Airport",
+     "nameKo":"바르셀로나 국제공항",
+     "iata":"BCN",
+     "countryName":"Spain",
+     "countryNameKo":"스페인",
+     "cityName":"Barcelona",
+     "cityNameKo":"바르셀로나"
+  },
+  {
+     "name":"Changi Airport",
+     "nameKo":"창이 공항",
+     "iata":"SIN",
+     "countryName":"Singapore",
+     "countryNameKo":"싱가포르",
+     "cityName":"Singapore",
+     "cityNameKo":"싱가포르"
+  },
+  {
+     "name":"Dubai International Airport",
+     "nameKo":"두바이 국제공항",
+     "iata":"DXB",
+     "countryName":"United Arab Emirates",
+     "countryNameKo":"UAE",
+     "cityName":"Dubai",
+     "cityNameKo":"두바이"
+  },
+  {
+     "name":"Abu Dhabi International Airport",
+     "nameKo":"아부다비 국제공항",
+     "iata":"AUH",
+     "countryName":"United Arab Emirates",
+     "countryNameKo":"UAE",
+     "cityName":"Abu Dhabi",
+     "cityNameKo":"아부다비"
+  },
+  {
+     "iata":"BUE",
+     "cityNameKo":"부에노스 아이레스"
+  },
+  {
+     "name":"Heydar Aliyev International Airport",
+     "nameKo":"하이다르 알리예프 국제 공항",
+     "iata":"GYD",
+     "countryName":"Azerbaijan",
+     "countryNameKo":"아제르바이잔",
+     "cityName":"Baku",
+     "cityNameKo":"바쿠"
+  },
+  {
+     "name":"Heathrow Airport",
+     "nameKo":"히드로우 공항",
+     "iata":"LHR",
+     "countryName":"United Kingdom",
+     "countryNameKo":"영국",
+     "cityName":"London",
+     "cityNameKo":"런던/히드로"
+  },
+  {
+     "name":"Tullamarine Airport ",
+     "nameKo":"툴라마린 공항 ",
+     "iata":"MEL",
+     "countryName":"Australia",
+     "countryNameKo":"오스트레일리아",
+     "cityName":"Melbourne",
+     "cityNameKo":"멜버른"
+  },
+  {
+     "name":"Brisbane International Airport",
+     "nameKo":"브리즈번 국제공항",
+     "iata":"BNE",
+     "countryName":"Australia",
+     "countryNameKo":"오스트레일리아",
+     "cityName":"Brisbane",
+     "cityNameKo":"브리즈번"
+  },
+  {
+     "name":"Kingsford Smith Airport ",
+     "nameKo":"킹스포트 스미스 공항 ",
+     "iata":"SYD",
+     "countryName":"Australia",
+     "countryNameKo":"오스트레일리아",
+     "cityName":"Sydney",
+     "cityNameKo":"시드니"
+  },
+  {
+     "name":"Vienna International Airport",
+     "nameKo":"비엔나 국제공항",
+     "iata":"VIE",
+     "countryName":"Austria",
+     "countryNameKo":"오스트리아",
+     "cityName":"Vienna",
+     "cityNameKo":"비엔나"
+  },
+  {
+     "name":"Tashkent International Airport",
+     "nameKo":"타슈켄트 국제 공항",
+     "iata":"TAS",
+     "countryName":"Uzbekistan",
+     "countryNameKo":"우즈베키스탄",
+     "cityName":"Tashkent",
+     "cityNameKo":"타슈켄트"
+  },
+  {
+     "name":"Mehrabad International Airport",
+     "nameKo":"메드라밧 국제공항",
+     "iata":"THR",
+     "countryName":"Iran",
+     "countryNameKo":"이란",
+     "cityName":"Tehran",
+     "cityNameKo":"테헤란"
+  },
+  {
+     "name":"Ben Gurion International Airport",
+     "nameKo":"반구리온 국제공항",
+     "iata":"TLV",
+     "countryName":"Israel",
+     "countryNameKo":"이스라엘",
+     "cityName":"Tel-Aviv",
+     "cityNameKo":"텔아비브"
+  },
+  {
+     "name":"Cairo International Airport",
+     "nameKo":"카이로 국제공항",
+     "iata":"CAI",
+     "countryName":"Egypt",
+     "countryNameKo":"이집트",
+     "cityName":"Cairo",
+     "cityNameKo":"카이로"
+  },
+  {
+     "name":"Fiumicino Airport ",
+     "nameKo":"피우미치노 공항 ",
+     "iata":"FCO",
+     "countryName":"Italy",
+     "countryNameKo":"이탈리아",
+     "cityName":"Rome",
+     "cityNameKo":"로마"
+  },
+  {
+     "name":"Malpensa Airport",
+     "nameKo":"말펜사 공항",
+     "iata":"MXP",
+     "countryName":"Italy",
+     "countryNameKo":"이탈리아",
+     "cityName":"Milan",
+     "cityNameKo":"밀라노"
+  },
+  {
+     "name":"Indira Gandhi International Airport",
+     "nameKo":"인디라 간디 국제공항",
+     "iata":"DEL",
+     "countryName":"India",
+     "countryNameKo":"인도",
+     "cityName":"New Delhi",
+     "cityNameKo":"델리"
+  },
+  {
+     "name":"Chhatrapati Shivaji International Airport",
+     "nameKo":"채해트라피티 시버지 국제공항",
+     "iata":"BOM",
+     "countryName":"India",
+     "countryNameKo":"인도",
+     "cityName":"Mumbai",
+     "cityNameKo":"뭄바이"
+  },
+  {
+     "name":"Chennai International Airport",
+     "nameKo":"첸나이 국제공항",
+     "iata":"MAA",
+     "countryName":"India",
+     "countryNameKo":"인도",
+     "cityName":"Madras",
+     "cityNameKo":"첸나이"
+  },
+  {
+     "name":"Ngurah Rai Airport",
+     "nameKo":"느구라 라이 공항",
+     "iata":"DPS",
+     "countryName":"Indonesia",
+     "countryNameKo":"인도네시아",
+     "cityName":"Denpasar Bali",
+     "cityNameKo":"덴파사르"
+  },
+  {
+     "name":"Soekarno-Hatta International Airport",
+     "nameKo":"소엑카르노 하타 국제공항",
+     "iata":"CGK",
+     "countryName":"Indonesia",
+     "countryNameKo":"인도네시아",
+     "cityName":"Jakarta",
+     "cityNameKo":"자카르타"
+  },
+  {
+     "name":"Kagoshima Airport",
+     "nameKo":"가고시마 공항",
+     "iata":"KOJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Kagoshima",
+     "cityNameKo":"가고시마"
+  },
+  {
+     "name":"Komatsu Airport",
+     "nameKo":"코마쓰 공항",
+     "iata":"KMQ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Komatsu",
+     "cityNameKo":"고마쓰"
+  },
+  {
+     "name":"Kumamoto Airport",
+     "nameKo":"구마모토 공항",
+     "iata":"KMJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Kumamoto",
+     "cityNameKo":"구마모토"
+  },
+  {
+     "name":"Kokura Airport",
+     "nameKo":"고쿠라 공항",
+     "iata":"KKJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Kitakyushu",
+     "cityNameKo":"기타큐슈"
+  },
+  {
+     "name":"Nagasaki Airport",
+     "nameKo":"나가사키 공항",
+     "iata":"NGS",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Nagasaki",
+     "cityNameKo":"나가사키"
+  },
+  {
+     "name":"Chubu Centrair International Airport ",
+     "nameKo":"주부 센트에어 국제공항 ",
+     "iata":"NGO",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Nagoya",
+     "cityNameKo":"나고야"
+  },
+  {
+     "name":"Niigata Airport",
+     "nameKo":"니가타 /키가타 공항",
+     "iata":"KIJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Niigata",
+     "cityNameKo":"니가타"
+  },
+  {
+     "name":"Takamatsu Airport",
+     "nameKo":"다카마쓰 공항",
+     "iata":"TAK",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Takamatsu",
+     "cityNameKo":"다카마쓰"
+  },
+  {
+     "name":"Toyama Airport",
+     "nameKo":"토하마 /토이아마 공항",
+     "iata":"TOY",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Toyama",
+     "cityNameKo":"도야마"
+  },
+  {
+     "name":"Narita Airport",
+     "nameKo":"나리타 공항",
+     "iata":"NRT",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Tokyo",
+     "cityNameKo":"도쿄/ 나리타"
+  },
+  {
+     "name":"Tokyo International Airport ",
+     "nameKo":"동경국제공항 ",
+     "iata":"HND",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Tokyo",
+     "cityNameKo":"도쿄/ 하네다"
+  },
+  {
+     "name":"Matsuyama Airport",
+     "nameKo":"마츠야마 /마쯔야마 공항",
+     "iata":"MYJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Matsuyama",
+     "cityNameKo":"마쓰야마"
+  },
+  {
+     "name":"Miyazaki Airport",
+     "nameKo":"미야자키 공항",
+     "iata":"KMI",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Miyazaki",
+     "cityNameKo":"미야자키"
+  },
+  {
+     "name":"Chitose Airport",
+     "nameKo":"치토세 공항",
+     "iata":"CTS",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Sapporo",
+     "cityNameKo":"삿포로"
+  },
+  {
+     "name":"Sendai Airport",
+     "nameKo":"센다이 공항",
+     "iata":"SDJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Sendai",
+     "cityNameKo":"센다이"
+  },
+  {
+     "name":"Shizuoka Airport",
+     "nameKo":"시즈오카 공항",
+     "iata":"FSZ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Shizuoka",
+     "cityNameKo":"시즈오카"
+  },
+  {
+     "name":"Asahikawa Airport",
+     "nameKo":"아사히카와 공항",
+     "iata":"AKJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Asahikawa",
+     "cityNameKo":"아사히카와"
+  },
+  {
+     "name":"Aomori Airport",
+     "nameKo":"아오모리 공항",
+     "iata":"AOJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Aomori",
+     "cityNameKo":"아오모리"
+  },
+  {
+     "iata":"OSA",
+     "cityNameKo":"오사카"
+  },
+  {
+     "name":"Kansai International Airport",
+     "nameKo":"간사이 국제공항",
+     "iata":"KIX",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Osaka",
+     "cityNameKo":"오사카/ 간사이"
+  },
+  {
+     "name":"Oita Airport",
+     "nameKo":"오이타 공항",
+     "iata":"OIT",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Oita",
+     "cityNameKo":"오이타"
+  },
+  {
+     "name":"Okayama Airport",
+     "nameKo":"오카야마 /오까야마 공항",
+     "iata":"OKJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Okayama",
+     "cityNameKo":"오카야마"
+  },
+  {
+     "name":"Naha Airport",
+     "nameKo":"나하 공항",
+     "iata":"OKA",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Naha",
+     "cityNameKo":"오키나와"
+  },
+  {
+     "name":"Miho Airport",
+     "nameKo":"미호 공항",
+     "iata":"YGJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Yonago",
+     "cityNameKo":"요나고"
+  },
+  {
+     "name":"Hakodate Airport",
+     "nameKo":"하코다테 공항",
+     "iata":"HKD",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Hakodate",
+     "cityNameKo":"하코다테"
+  },
+  {
+     "name":"Fukushima Airport",
+     "nameKo":"후쿠시마 공항",
+     "iata":"FKS",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Sukagawa",
+     "cityNameKo":"후쿠시마"
+  },
+  {
+     "name":"Fukuoka Airport",
+     "nameKo":"후쿠오카 공항",
+     "iata":"FUK",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Fukuoka",
+     "cityNameKo":"후쿠오카"
+  },
+  {
+     "name":"Hiroshima International Airport",
+     "nameKo":"히로시마 국제공항",
+     "iata":"HIJ",
+     "countryName":"Japan",
+     "countryNameKo":"일본",
+     "cityName":"Hiroshima",
+     "cityNameKo":"히로시마"
+  },
+  {
+     "name":"Baiyun Airport",
+     "nameKo":"바이윤 공항",
+     "iata":"CAN",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Guangzhou",
+     "cityNameKo":"광저우"
+  },
+  {
+     "name":"Guilin Liangjiang International Airport",
+     "nameKo":"구이린 리엥쟝 국제공항",
+     "iata":"KWL",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Guilin",
+     "cityNameKo":"구이린(계림)"
+  },
+  {
+     "name":"Guiyang Longdongbao Airport",
+     "nameKo":"구이양 롱둥바오 공항",
+     "iata":"KWE",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Guiyang",
+     "cityNameKo":"구이양"
+  },
+  {
+     "name":"Nanning Wuxu International Airport",
+     "nameKo":"난닝 웍슈 국제공항",
+     "iata":"NNG",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Nanning",
+     "cityNameKo":"난닝"
+  },
+  {
+     "name":"Nanjing Lukou International Airport",
+     "nameKo":"난징 루쿠 국제공항",
+     "iata":"NKG",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Nanjing",
+     "cityNameKo":"난징"
+  },
+  {
+     "name":"Nanchang International Airport",
+     "nameKo":"난창 국제공항",
+     "iata":"KHN",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Nanchang",
+     "cityNameKo":"난창"
+  },
+  {
+     "name":"Ningbo Lishe International Airport",
+     "nameKo":"닝보 리쉬 국제공항",
+     "iata":"NGB",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Ningbo",
+     "cityNameKo":"닝보"
+  },
+  {
+     "name":"Dalian Zhoushuizi International Airport",
+     "nameKo":"다롄 쩌우쉬이지 국제공항",
+     "iata":"DLC",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Dalian",
+     "cityNameKo":"다롄"
+  },
+  {
+     "name":"Lijiang Airport",
+     "nameKo":"리장 여강 공항",
+     "iata":"LJG",
+     "countryName":"Hong Kong",
+     "countryNameKo":"홍콩",
+     "cityName":"Lijiang",
+     "cityNameKo":"리장"
+  },
+  {
+     "name":"Macao International Airport",
+     "nameKo":"마카오 국제공항",
+     "iata":"MFM",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Macau",
+     "cityNameKo":"마카오"
+  },
+  {
+     "name":"Mudanjiang Airport",
+     "nameKo":"무단장 공항",
+     "iata":"MDG",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Mudanjiang",
+     "cityNameKo":"무단장"
+  },
+  {
+     "name":"Beijing Capital Airport",
+     "nameKo":"베이징 캐피탈 공항",
+     "iata":"PEK",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Beijing",
+     "cityNameKo":"베이징"
+  },
+  {
+     "name":"Pu Dong Airport",
+     "nameKo":"푸동 공항",
+     "iata":"PVG",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Shanghai",
+     "cityNameKo":"상하이/ 푸동"
+  },
+  {
+     "name":"Xiamen Gaoqi International Airport",
+     "nameKo":"샤먼 가오츠 국제공항",
+     "iata":"XMN",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Xiamen",
+     "cityNameKo":"샤먼"
+  },
+  {
+     "iata":"SIA",
+     "cityNameKo":"서안"
+  },
+  {
+     "name":"Shenyang Taoxian International Airport",
+     "nameKo":"선양 타오시안 국제공항",
+     "iata":"SHE",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Shenyang City",
+     "cityNameKo":"선양"
+  },
+  {
+     "name":"Shenzhen Baoan International Airport",
+     "nameKo":"쉔젠 바오안 국제공항",
+     "iata":"SZX",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Shenzhen",
+     "cityNameKo":"선전"
+  },
+  {
+     "name":"Daguocun Airport",
+     "nameKo":"다구오쿤 공항",
+     "iata":"SJW",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Shijiazhuang",
+     "cityNameKo":"스자좡"
+  },
+  {
+     "name":"Xianyang Airport ",
+     "nameKo":"샹양 공항 ",
+     "iata":"XIY",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"XiAn",
+     "cityNameKo":"시안"
+  },
+  {
+     "name":"Sanya Phonix International Airport ",
+     "nameKo":"산야 피닉스 국제공항 ",
+     "iata":"SYX",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Sanya",
+     "cityNameKo":"싼야"
+  },
+  {
+     "name":"Yanji Airport",
+     "nameKo":"옌지 연길 공항",
+     "iata":"YNJ",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Yanji",
+     "cityNameKo":"옌지"
+  },
+  {
+     "name":"Yancheng Nanyang International Airport",
+     "nameKo":"옌청 남양 국제 공항",
+     "iata":"YNZ",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Yancheng",
+     "cityNameKo":"옌청"
+  },
+  {
+     "name":"Laishan Airport",
+     "nameKo":"라이샨 공항",
+     "iata":"YNT",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Yantai",
+     "cityNameKo":"옌타이"
+  },
+  {
+     "name":"Urumqi Diwopu International Airport",
+     "nameKo":"우루무치 디와푸 국제공항",
+     "iata":"URC",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Urumchi",
+     "cityNameKo":"우루무치"
+  },
+  {
+     "name":"Weihai Dashuibo Airport",
+     "nameKo":"위해 대우위보 공항",
+     "iata":"WEH",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Weihai",
+     "cityNameKo":"웨이하이"
+  },
+  {
+     "name":"Zhengzhou Xinzheng International Airport",
+     "nameKo":"정저우 신젱 국제공항",
+     "iata":"CGO",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Zhengzhou",
+     "cityNameKo":"정저우"
+  },
+  {
+     "name":"Jinan Yaoqiang Airport",
+     "nameKo":"지난 야오칭 공항",
+     "iata":"TNA",
+     "countryName":"Hong Kong",
+     "countryNameKo":"홍콩",
+     "cityName":"Jinan",
+     "cityNameKo":"지난"
+  },
+  {
+     "name":"Changsha Huanghua International Airport",
+     "nameKo":"창사 황화 국제공항",
+     "iata":"CSX",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Changsha",
+     "cityNameKo":"창사"
+  },
+  {
+     "name":"Changchun Dafangshen International Airport",
+     "nameKo":"창춘 다팡쉔 국제공항",
+     "iata":"CGQ",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Changchun",
+     "cityNameKo":"창춘"
+  },
+  {
+     "name":"Chengdu Shuangliu International Airport",
+     "nameKo":"청두 슈앙리우 국제공항",
+     "iata":"CTU",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Chengdu",
+     "cityNameKo":"청두"
+  },
+  {
+     "name":"Chongqing Jiangbei International Airport",
+     "nameKo":"충칭 지엥바이 국제공항",
+     "iata":"CKG",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Chongqing",
+     "cityNameKo":"충칭"
+  },
+  {
+     "name":"Qingdao Liuting International Airport",
+     "nameKo":"칭다오 리아우팅 국제공항",
+     "iata":"TAO",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Qing Dao",
+     "cityNameKo":"칭다오"
+  },
+  {
+     "name":"Kunming Changshui International Airport",
+     "nameKo":"쿤밍 창수이 국제공항",
+     "iata":"KMG",
+     "countryName":"Hong Kong",
+     "countryNameKo":"홍콩",
+     "cityName":"Kunming",
+     "cityNameKo":"쿤밍"
+  },
+  {
+     "name":"Tianjin Binhai International Airport",
+     "nameKo":"톈진 빈하이 국제공항",
+     "iata":"TSN",
+     "countryName":"Macao",
+     "countryNameKo":"마카오",
+     "cityName":"Tianjin",
+     "cityNameKo":"톈진"
+  },
+  {
+     "name":"Harbin Taiping International Airport",
+     "nameKo":"하얼빈 타이팽 국제공항",
+     "iata":"HRB",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Harbin",
+     "cityNameKo":"하얼빈"
+  },
+  {
+     "name":"Haikou Meilan International Airport",
+     "nameKo":"하이커우 메일런 국제공항",
+     "iata":"HAK",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Haikou",
+     "cityNameKo":"하이커우"
+  },
+  {
+     "name":"Hangzhou Xiaoshan International Airport",
+     "nameKo":"항저우 지오샨 국제공항",
+     "iata":"HGH",
+     "countryName":"China",
+     "countryNameKo":"중국",
+     "cityName":"Hangzhou",
+     "cityNameKo":"항저우"
+  },
+  {
+     "name":"Hong Kong International Airport ",
+     "nameKo":"홍콩 국제공항 ",
+     "iata":"HKG",
+     "countryName":"Hong Kong",
+     "countryNameKo":"홍콩",
+     "cityName":"Hong Kong",
+     "cityNameKo":"홍콩"
+  },
+  {
+     "name":"Huaian Lianshui Airport",
+     "nameKo":"화이안 Lianshui 공항",
+     "iata":"HIA",
+     "countryName":"Hong Kong",
+     "countryNameKo":"홍콩",
+     "cityName":"Huaian",
+     "cityNameKo":"화이안"
+  },
+  {
+     "name":"Ruzyne Airport",
+     "nameKo":"루이즈네 공항",
+     "iata":"PRG",
+     "countryName":"Czech Republic",
+     "countryNameKo":"체코 공화국",
+     "cityName":"Prague",
+     "cityNameKo":"프라하"
+  },
+  {
+     "name":"Santiago Municipal Airport",
+     "nameKo":"산티아고 시공항",
+     "iata":"STI",
+     "countryName":"Dominican Republic",
+     "countryNameKo":"도미니카공화국",
+     "cityName":"Santiago de los Caballeros",
+     "cityNameKo":"산티아고"
+  },
+  {
+     "name":"Astana International Airport",
+     "nameKo":"아스타나 국제공항",
+     "iata":"TSE",
+     "countryName":"Kazakhstan",
+     "countryNameKo":"카자흐스탄",
+     "cityName":"Astana",
+     "cityNameKo":"아스타나"
+  },
+  {
+     "name":"Almaty Airport",
+     "nameKo":"알마티 공항",
+     "iata":"ALA",
+     "countryName":"Kazakhstan",
+     "countryNameKo":"카자흐스탄",
+     "cityName":"Almaty",
+     "cityNameKo":"알마티"
+  },
+  {
+     "name":"Doha International Airport",
+     "nameKo":"도하 국제공항",
+     "iata":"DOH",
+     "countryName":"Qatar",
+     "countryNameKo":"카타르",
+     "cityName":"Doha",
+     "cityNameKo":"도하"
+  },
+  {
+     "name":"Angkor International Airport",
+     "nameKo":"앙코르 국제공항",
+     "iata":"REP",
+     "countryName":"Cambodia",
+     "countryNameKo":"캄보디아",
+     "cityName":"Siem Reap",
+     "cityNameKo":"시엠립"
+  },
+  {
+     "name":"Pochentong Airport",
+     "nameKo":"포켄통 공항",
+     "iata":"PNH",
+     "countryName":"Cambodia",
+     "countryNameKo":"캄보디아",
+     "cityName":"Phnom Penh",
+     "cityNameKo":"프놈펜"
+  },
+  {
+     "name":"Vancouver International Airport",
+     "nameKo":"밴쿠버 국제공항",
+     "iata":"YVR",
+     "countryName":"Canada",
+     "countryNameKo":"캐나다",
+     "cityName":"Vancouver BC",
+     "cityNameKo":"밴쿠버"
+  },
+  {
+     "name":"Calgary International Airport",
+     "nameKo":"캘거리 국제공항",
+     "iata":"YYC",
+     "countryName":"Canada",
+     "countryNameKo":"캐나다",
+     "cityName":"Calgary AB",
+     "cityNameKo":"캘거리"
+  },
+  {
+     "name":"Toronto Lester B. Pearson International Airport",
+     "nameKo":"피어슨 국제공항",
+     "iata":"YYZ",
+     "countryName":"Canada",
+     "countryNameKo":"캐나다",
+     "cityName":"Toronto ON",
+     "cityNameKo":"토론토"
+  },
+  {
+     "name":"Kuwait International Airport",
+     "nameKo":"쿠웨이트 국제공항",
+     "iata":"KWI",
+     "countryName":"Kuwait",
+     "countryNameKo":"쿠웨이트",
+     "cityName":"Kuwait",
+     "cityNameKo":"쿠웨이트"
+  },
+  {
+     "name":"Manas International Airport",
+     "nameKo":"만사스 국제공항",
+     "iata":"FRU",
+     "countryName":"Kyrgyzstan",
+     "countryNameKo":"키르기스스탄",
+     "cityName":"Bishkek",
+     "cityNameKo":"비슈케크"
+  },
+  {
+     "name":"Suvarnabhumi International Airport ",
+     "nameKo":"수완나푸미 국제공항 ",
+     "iata":"BKK",
+     "countryName":"Thailand",
+     "countryNameKo":"태국",
+     "cityName":"Bangkok",
+     "cityNameKo":"방콕"
+  },
+  {
+     "name":"Don Mueang International",
+     "nameKo":"방콕 국제공항 ",
+     "iata":"DMK",
+     "countryName":"Thailand",
+     "countryNameKo":"태국",
+     "cityName":"Bangkok",
+     "cityNameKo":"방콕/돈므앙"
+  },
+  {
+     "name":"Chiang Mai International Airport",
+     "nameKo":"치앙마이 국제공항",
+     "iata":"CNX",
+     "countryName":"Thailand",
+     "countryNameKo":"태국",
+     "cityName":"Chiang Mai",
+     "cityNameKo":"치앙마이"
+  },
+  {
+     "name":"Phuket International Airport",
+     "nameKo":"푸케트 섬 국제공항",
+     "iata":"HKT",
+     "countryName":"Thailand",
+     "countryNameKo":"태국",
+     "cityName":"Phuket",
+     "cityNameKo":"푸껫"
+  },
+  {
+     "name":"Ataturk Airport",
+     "nameKo":"아타투르크 공항",
+     "iata":"IST",
+     "countryName":"Turkey",
+     "countryNameKo":"터키",
+     "cityName":"Istanbul",
+     "cityNameKo":"이스탄불"
+  },
+  {
+     "iata":"ASB",
+     "cityNameKo":"아쉬가바트"
+  },
+  {
+     "iata":"ROR",
+     "cityNameKo":"코로르"
+  },
+  {
+     "name":"Warsaw Frederic Chopin Airport",
+     "nameKo":"바르샤바 프레데릭 쇼팽 공항",
+     "iata":"WAW",
+     "countryName":"Poland",
+     "countryNameKo":"폴란드",
+     "cityName":"Warsaw",
+     "cityNameKo":"바르샤바"
+  },
+  {
+     "name":"Charles De Gaulle Airport",
+     "nameKo":"샤를 드 골 공항",
+     "iata":"CDG",
+     "countryName":"France",
+     "countryNameKo":"프랑스",
+     "cityName":"Paris",
+     "cityNameKo":"파리"
+  },
+  {
+     "name":"Nadi International Airport",
+     "nameKo":"나디 국제공항",
+     "iata":"NAN",
+     "countryName":"Fiji",
+     "countryNameKo":"피지",
+     "cityName":"Nadi",
+     "cityNameKo":"난디"
+  },
+  {
+     "name":"Helsinki-Vantaa Airport",
+     "nameKo":"헬싱키 반타 공항",
+     "iata":"HEL",
+     "countryName":"Finland",
+     "countryNameKo":"핀란드",
+     "cityName":"Helsinki",
+     "cityNameKo":"헬싱키"
+  },
+  {
+     "name":"Ninoy Aquino International Airport",
+     "nameKo":"니노이 아퀴노 국제공항",
+     "iata":"MNL",
+     "countryName":"Philippines",
+     "countryNameKo":"필리핀",
+     "cityName":"Manila",
+     "cityNameKo":"마닐라"
+  },
+  {
+     "name":"Mactan International Airport",
+     "nameKo":"막탄 국제공항",
+     "iata":"CEB",
+     "countryName":"Philippines",
+     "countryNameKo":"필리핀",
+     "cityName":"Lapu-Lapu",
+     "cityNameKo":"세부"
+  },
+  {
+     "name":"Subic Bay International Airport",
+     "nameKo":"수빅만 국제공항",
+     "iata":"SFS",
+     "countryName":"Philippines",
+     "countryNameKo":"필리핀",
+     "cityName":"Olongapo City",
+     "cityNameKo":"수비크"
+  },
+  {
+     "name":"Kalibo Airport",
+     "nameKo":"칼리보 공항",
+     "iata":"KLO",
+     "countryName":"Philippines",
+     "countryNameKo":"필리핀",
+     "cityName":"Kalibo Aklan",
+     "cityNameKo":"칼리보"
+  },
+  {
+     "name":"Clark Field Airport",
+     "nameKo":"클라 필드 공항",
+     "iata":"CRK",
+     "countryName":"Philippines",
+     "countryNameKo":"필리핀",
+     "cityName":"Manila",
+     "cityNameKo":"클라크필드"
+  },
+  {
+     "name":"Daegu International Airport",
+     "nameKo":"대구 국제공항",
+     "iata":"TAE",
+     "countryName":"Republic of Korea",
+     "countryNameKo":"대한민국",
+     "cityName":"Daegu",
+     "cityNameKo":"대구"
+  },
+  {
+     "name":"Gimhae International Airport",
+     "nameKo":"김해 국제공항",
+     "iata":"PUS",
+     "countryName":"Republic of Korea",
+     "countryNameKo":"대한민국",
+     "cityName":"Busan",
+     "cityNameKo":"부산"
+  },
+  {
+     "name":"Gimpo International Airport",
+     "nameKo":"김포 국제공항",
+     "iata":"GMP",
+     "countryName":"Republic of Korea",
+     "countryNameKo":"대한민국",
+     "cityName":"Seoul",
+     "cityNameKo":"서울/김포"
+  },
+  {
+     "name":"Jeju International Airport",
+     "nameKo":"제주 국제공항",
+     "iata":"CJU",
+     "countryName":"Republic of Korea",
+     "countryNameKo":"대한민국",
+     "cityName":"Jeju",
+     "cityNameKo":"제주"
+  }
+]

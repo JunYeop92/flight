@@ -1,0 +1,37 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/responsive';
+
+.wrapper {
+  padding-bottom: 20px;
+  border-bottom: 1px solid colors.$GRAY3;
+
+  h2 {
+    margin-bottom: 15px;
+
+    span:nth-child(1) {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    span:nth-child(2) {
+      font-size: 18px;
+      white-space: nowrap;
+    }
+  }
+
+  dl {
+    div {
+      display: flex;
+
+      dt {
+        width: 40px;
+        color: colors.$GRAY2;
+      }
+    }
+  }
+}
+
+@include responsive.after(SD) {
+  // padding: 10px;
+}

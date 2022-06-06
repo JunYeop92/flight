@@ -6,6 +6,7 @@ import Title from 'components/Title/Title'
 import DepartPage from 'pages/FlightPage/DepartPage'
 import ArrivePage from 'pages/FlightPage/ArrivePage'
 import WeatherPage from 'pages/WeatherPage/WeatherPage'
+import AirportPage from 'pages/AirportPage/AirportPage'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path='/' element={<DepartPage />} />
             <Route path='arrive' element={<ArrivePage />} />
             <Route path='weather' element={<WeatherPage />} />
+            <Route path='airport' element={<AirportPage />} />
             <Route path='*' element={<div>404</div>} />
           </Routes>
         </div>

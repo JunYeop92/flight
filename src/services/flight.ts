@@ -1,4 +1,4 @@
-import { axios } from 'hooks/worker'
+import axios from 'axios'
 import { IFlightItem, IFlightApiParams } from 'types/flight'
 
 const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy'

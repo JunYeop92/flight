@@ -1,0 +1,16 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/responsive';
+
+.wrapper {
+  margin-top: 20px;
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  ul {
+    padding: 0 5px;
+  }
+}

@@ -21,6 +21,11 @@ export default function Navigation() {
             날씨
           </NavLink>
         </li>
+        <li>
+          <NavLink to='airport' className={({ isActive }) => cx({ [styles.active]: isActive })}>
+            공항
+          </NavLink>
+        </li>
       </ul>
     </nav>
   )
