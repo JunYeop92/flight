@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CommentIcon, HeartIcon } from 'assets/svgs'
 import styles from './airportItem.module.scss'
-import AirportModal from './Modal/AirportModal'
+import AirportModal from './AirportModal/AirportModal'
 
 export default function AirportItem() {
   const [isOpen, setIsOpen] = useState(false)

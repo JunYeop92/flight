@@ -3,6 +3,7 @@
 @use '/src/styles/mixins/responsive';
 
 .wrapper {
+  padding: 10px 15px;
   margin-top: 20px;
 
   h3 {
@@ -12,5 +13,6 @@
 
   ul {
     padding: 0 5px;
+    margin-bottom: 30px;
   }
 }

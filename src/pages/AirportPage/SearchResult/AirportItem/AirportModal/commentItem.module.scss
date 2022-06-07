@@ -5,10 +5,6 @@
   padding: 25px 0;
   border-bottom: 1px solid colors.$GRAY3;
 
-  &:last-child {
-    border-bottom: none;
-  }
-
   .top {
     @include flexbox.flexbox(start, center);
     margin-bottom: 15px;
@@ -31,10 +27,5 @@
         color: colors.$GRAY2;
       }
     }
-  }
-
-  .comment {
-    // margin-bottom: 2px;
-    // padding-left: 5px;
   }
 }

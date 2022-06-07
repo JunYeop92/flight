@@ -1,4 +1,5 @@
 import styles from './comment.module.scss'
+import CommentForm from './CommentForm'
 import CommentItem from './CommentItem'
 
 export default function Comment() {
@@ -10,10 +11,7 @@ export default function Comment() {
         <CommentItem />
         <CommentItem />
       </ul>
-      {/* <form>
-        <input type='text' placeholder='닉네임을 입력하세요.' />
-        <textarea placeholder='댓글을 남겨보세요.' />
-      </form> */}
+      <CommentForm />
     </div>
   )
 }
