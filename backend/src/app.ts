@@ -4,8 +4,7 @@ import mongoose from 'mongoose'
 import appRouter from './routes'
 
 config()
-const PORT = process.env.PORT
-const MONGO_URI = process.env.MONGO_URI as string
+const { MONGO_URI, PORT } = process.env
 
 const app = express()
 app.use(express.json())
@@ -13,7 +12,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api', appRouter)
 
 mongoose
-  .connect(MONGO_URI)
+  .connect(MONGO_URI as string)
   .then(() => console.log('Successfully connected to mongodb'))
   .catch((e) => console.error(e))
 
