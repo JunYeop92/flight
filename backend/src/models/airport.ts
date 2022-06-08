@@ -8,6 +8,7 @@ const AirportSchema = new Schema({
   countryNameKo: String,
   cityName: String,
   cityNameKo: String,
+  likeCount: Number,
 })
 
 export default model('Airport', AirportSchema)

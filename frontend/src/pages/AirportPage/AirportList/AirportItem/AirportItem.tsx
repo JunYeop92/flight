@@ -23,7 +23,7 @@ export default function AirportItem({ data }: IProps) {
           <div className={styles.info}>
             <div className={styles.heart}>
               <HeartIcon />
-              <span>20</span>
+              <span>{data.likeCount}</span>
             </div>
             <div className={styles.comment}>
               <CommentIcon />

@@ -6,4 +6,5 @@ export interface IAirportItem {
   countryNameKo: string
   cityName: string
   cityNameKo: string
+  likeCount: number
 }
