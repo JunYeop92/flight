@@ -11,7 +11,7 @@ export const getFlightArriveApi = async (params: IFlightApiParams): Promise<IFli
 }
 
 export const getFlightDepartApi = async (params: IFlightApiParams): Promise<IFlightItem[]> => {
-  const res = await axios.get('/api/schedule/arrive', {
+  const res = await axios.get('/api/schedule/depart', {
     params: {
       ...params,
     },

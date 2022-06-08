@@ -3,6 +3,7 @@ import Comment from './Comment'
 import Portal from 'components/Portal'
 import { EndIcon, HeartIcon } from 'assets/svgs'
 import { IAirportItem } from 'types/airport'
+import useIncLikeMutation from 'hooks/useIncLikeMutation'
 
 interface IProps {
   data: IAirportItem
@@ -10,13 +11,18 @@ interface IProps {
 }
 
 export default function AirportModal({ data, handleClickClose }: IProps) {
+  const { mutate: incLikeMutate } = useIncLikeMutation()
+  const { _id, likeCount } = data
+
+  const handleClickLike = () => incLikeMutate({ _id, likeCount: likeCount + 1 })
+
   return (
     <Portal>
       <article className={styles.wrapper}>
         <div className={styles.top}>
-          <button type='button' className={styles.heart} onClick={handleClickClose}>
+          <button type='button' className={styles.heart} onClick={handleClickLike}>
             <HeartIcon />
-            <span>20</span>
+            <span>{likeCount}</span>
           </button>
 
           <button type='button' className={styles.close} onClick={handleClickClose}>

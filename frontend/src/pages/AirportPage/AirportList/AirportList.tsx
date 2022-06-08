@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
 import { getAirportListApi } from 'services/airport'
+import { queryKeys } from 'types/common'
 import AirportItem from './AirportItem/AirportItem'
 import styles from './airportList.module.scss'
 
@@ -9,7 +10,7 @@ interface IProps {
 }
 
 export default function AirportList({ searchInput }: IProps) {
-  const { data } = useQuery(['getAirportListApi'], getAirportListApi, {
+  const { data } = useQuery(queryKeys.airpostList, getAirportListApi, {
     suspense: true,
     refetchOnWindowFocus: false,
     staleTime: 5 * 60 * 1000,
@@ -27,7 +28,7 @@ export default function AirportList({ searchInput }: IProps) {
   return (
     <ul className={styles.wrapper}>
       {Items.map((d) => (
-        <AirportItem key={d.iata} data={d} />
+        <AirportItem key={d._id} data={d} />
       ))}
     </ul>
   )
