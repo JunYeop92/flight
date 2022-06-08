@@ -6,7 +6,6 @@ import AirportList from './AirportList/AirportList'
 
 export default function AirportPage() {
   const [searchInput, setSearchInput] = useState('')
-
   const handleSearchChange = (value: string) => setSearchInput(value.trim())
 
   return (

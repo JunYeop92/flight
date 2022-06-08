@@ -1,0 +1,30 @@
+@use '/src/styles/constants/colors';
+
+.wrapper {
+  padding: 10px 15px;
+
+  h2 {
+    margin-bottom: 15px;
+
+    span:nth-child(1) {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    span:nth-child(2) {
+      font-size: 18px;
+      white-space: nowrap;
+    }
+  }
+
+  dl {
+    div {
+      display: flex;
+
+      dt {
+        width: 40px;
+        color: colors.$GRAY2;
+      }
+    }
+  }
+}

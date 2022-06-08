@@ -1,6 +1,6 @@
 import styles from './comment.module.scss'
-import CommentForm from './CommentForm'
-import CommentItem from './CommentItem'
+import CommentForm from './CommentForm/CommentForm'
+import CommentItem from './CommentItem/CommentItem'
 
 export default function Comment() {
   return (
