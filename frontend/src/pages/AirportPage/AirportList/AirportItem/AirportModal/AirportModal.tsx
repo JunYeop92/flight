@@ -2,12 +2,14 @@ import styles from './airportModal.module.scss'
 import Comment from './Comment'
 import Portal from 'components/Portal'
 import { EndIcon, HeartIcon } from 'assets/svgs'
+import { IAirportItem } from 'types/airport'
 
 interface IProps {
+  data: IAirportItem
   handleClickClose: () => void
 }
 
-export default function AirportModal({ handleClickClose }: IProps) {
+export default function AirportModal({ data, handleClickClose }: IProps) {
   return (
     <Portal>
       <article className={styles.wrapper}>
@@ -23,17 +25,17 @@ export default function AirportModal({ handleClickClose }: IProps) {
         </div>
         <div className={styles.info}>
           <h2>
-            <span>간사이 국제공항</span>
-            <span>(Kansai International Airport)</span>
+            <span>{data.nameKo}</span>
+            <span>({data.name})</span>
           </h2>
           <dl>
             <div>
               <dt>도시</dt>
-              <dd>오사카/간사이</dd>
+              <dd>{data.cityNameKo}</dd>
             </div>
             <div>
               <dt>나라</dt>
-              <dd>일본</dd>
+              <dd>{data.countryNameKo}</dd>
             </div>
           </dl>
         </div>

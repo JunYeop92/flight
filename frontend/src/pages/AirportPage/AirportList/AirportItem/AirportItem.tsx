@@ -2,8 +2,13 @@ import { useState } from 'react'
 import { CommentIcon, HeartIcon } from 'assets/svgs'
 import styles from './airportItem.module.scss'
 import AirportModal from './AirportModal/AirportModal'
+import { IAirportItem } from 'types/airport'
 
-export default function AirportItem() {
+interface IProps {
+  data: IAirportItem
+}
+
+export default function AirportItem({ data }: IProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClickOpen = () => setIsOpen(true)
@@ -13,7 +18,7 @@ export default function AirportItem() {
     <>
       <li className={styles.wrapper}>
         <button type='button' onClick={handleClickOpen}>
-          <div className={styles.title}>간사이 국제 공항</div>
+          <div className={styles.title}>{data.nameKo}</div>
 
           <div className={styles.info}>
             <div className={styles.heart}>
@@ -27,7 +32,7 @@ export default function AirportItem() {
           </div>
         </button>
       </li>
-      {isOpen && <AirportModal handleClickClose={handleClickClose} />}
+      {isOpen && <AirportModal data={data} handleClickClose={handleClickClose} />}
     </>
   )
 }

@@ -17,7 +17,7 @@ export default function WeatherList({ lat, lon }: IProps) {
 
   if (!data) return null
   return (
-    <ul className={styles.wrppaer}>
+    <ul className={styles.wrapper}>
       {data.map((d) => (
         <WeatherItme key={`${lat}-${lon}-${d.dt}`} data={d} />
       ))}

@@ -1,6 +1,7 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/flexbox';
 @use '/src/styles/mixins/responsive';
+@use '/src/styles/mixins/typography';
 
 .wrapper {
   button {
@@ -16,8 +17,9 @@
     }
 
     .title {
-      font-size: 20px;
+      @include typography.lineClamp(1);
       font-weight: bold;
+      text-align: left;
     }
 
     .info {
