@@ -7,7 +7,27 @@ import Airport from '../../models/airport'
 
 export const getList = async (req: Request, res: Response) => {
   try {
-    const result = await Airport.find()
+    const result = await Airport.aggregate([
+      {
+        // comments db join
+        $lookup: {
+          from: 'comments',
+          localField: '_id',
+          foreignField: 'airportId',
+          as: 'comments',
+        },
+      },
+      {
+        $project: {
+          name: 1,
+          nameKo: 1,
+          countryNameKo: 1,
+          cityNameKo: 1,
+          likeCount: 1,
+          commentCount: { $size: '$comments' },
+        },
+      },
+    ])
     res.send(result)
   } catch (err) {
     res.status(500).send(err)

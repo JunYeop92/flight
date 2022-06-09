@@ -3,10 +3,11 @@ import Comment from '../../models/comment'
 
 /*
   GET /api/comment
+  query : { airportId }
 */
 export const getCommentList = async (req: Request, res: Response) => {
   try {
-    const result = await Comment.find()
+    const result = await Comment.find(req.query)
     res.send(result)
   } catch (err) {
     res.status(500).send(err)
