@@ -1,15 +1,40 @@
 import { UserIcon } from 'assets/svgs'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import { useMutation, useQueryClient } from 'react-query'
+import { addCommentApi } from 'services/comment'
+import { queryKeys } from 'types/common'
 import styles from './commentForm.module.scss'
 
-export default function CommentForm() {
+interface IProps {
+  airportId: string
+}
+
+export default function CommentForm({ airportId }: IProps) {
+  const queryClient = useQueryClient()
+  const { mutate: addCommentMutate } = useMutation(addCommentApi, {
+    onSuccess: () => {
+      queryClient.invalidateQueries(queryKeys.commentList(airportId))
+    },
+  })
+
+  const [nickName, setNickName] = useState('')
+  const [content, setContent] = useState('')
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    addCommentMutate({ airportId, nickName, content })
+  }
+  const handleChangeName = (e: ChangeEvent<HTMLInputElement>) => setNickName(e.currentTarget.value)
+  const handleChangeContent = (e: ChangeEvent<HTMLTextAreaElement>) => setContent(e.currentTarget.value)
+
   return (
-    <form className={styles.wrapper}>
+    <form className={styles.wrapper} onSubmit={handleSubmit}>
       <div className={styles.user}>
         <UserIcon />
-        <input type='text' placeholder='닉네임을 입력하세요.' />
+        <input type='text' placeholder='닉네임을 입력하세요.' value={nickName} onChange={handleChangeName} />
       </div>
       <div className={styles.content}>
-        <textarea placeholder='댓글을 남겨보세요.' rows={1} />
+        <textarea placeholder='댓글을 남겨보세요.' rows={1} value={content} onChange={handleChangeContent} />
         <button type='submit'>등록</button>
       </div>
     </form>

@@ -20,7 +20,7 @@ export default function AirportModal({ data, handleClickClose }: IProps) {
         <AirportTop data={{ _id, likeCount }} handleClickClose={handleClickClose} />
         <AirportInfo data={{ name, nameKo, cityNameKo, countryNameKo }} />
         <hr />
-        <Comment />
+        <Comment airportId={_id} />
       </article>
     </Portal>
   )
