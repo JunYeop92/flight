@@ -23,7 +23,7 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
   return (
     <Portal>
       <article className={styles.overlay}>
-        <button type='button' className={styles.backBtn} onClick={handleClickClose} aria-label='outside-button' />
+        <button type='button' className={styles.backBtn} onClick={handleClickClose} aria-label='outside-close-button' />
         <div className={styles.box}>
           <div className={styles.title}>
             <h3>운항 정보</h3>

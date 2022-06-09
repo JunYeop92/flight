@@ -3,8 +3,8 @@ import styles from './routes.module.scss'
 
 import Navigation from 'components/Navigation/Navigation'
 import Title from 'components/Title/Title'
-import DepartPage from 'pages/FlightPage/DepartPage'
-import ArrivePage from 'pages/FlightPage/ArrivePage'
+import DepartPage from 'pages/FlightPage/DepartPage/DepartPage'
+import ArrivePage from 'pages/FlightPage/ArrivePage/ArrivePage'
 import WeatherPage from 'pages/WeatherPage/WeatherPage'
 import AirportPage from 'pages/AirportPage/AirportPage'
 
