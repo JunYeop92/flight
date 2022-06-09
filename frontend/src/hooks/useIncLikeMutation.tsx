@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from 'react-query'
-import { incLikeCntApi } from 'services/airport'
+import { queryKeys } from 'utils'
 import { IAirportItem, IIncLikeParam } from 'types/airport'
-import { queryKeys } from 'types/common'
+import { incLikeCntApi } from 'services/airport'
 
 export default function useIncLikeMutation() {
   const queryClient = useQueryClient()

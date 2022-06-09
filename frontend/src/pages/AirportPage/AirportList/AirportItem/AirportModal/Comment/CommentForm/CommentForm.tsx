@@ -3,7 +3,7 @@ import { useMutation, useQueryClient } from 'react-query'
 
 import { UserIcon } from 'assets/svgs'
 import styles from './commentForm.module.scss'
-import { queryKeys } from 'types/common'
+import { queryKeys } from 'utils'
 import { addCommentApi } from 'services/comment'
 
 interface IProps {

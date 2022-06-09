@@ -33,3 +33,10 @@ export const getCalcTime = (isDepart: boolean, estimatedDateTime: string, elapse
 
   return { startDayObj, endDayObj, elapseTimeStr }
 }
+
+export const queryKeys = {
+  departList: (fromTime: string) => ['departList', fromTime] as const,
+  arriveList: (fromTime: string) => ['arriveList', fromTime] as const,
+  airpostList: ['airportList'] as const,
+  commentList: (airportId: string) => ['commentList', airportId] as const,
+}

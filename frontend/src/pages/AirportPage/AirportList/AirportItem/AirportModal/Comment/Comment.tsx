@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query'
 
 import styles from './comment.module.scss'
-import { queryKeys } from 'types/common'
+import { queryKeys } from 'utils'
 import { getCommentListApi } from 'services/comment'
 
 import CommentForm from './CommentForm/CommentForm'

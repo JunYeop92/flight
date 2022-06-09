@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
 
-import { queryKeys } from 'types/common'
+import { queryKeys } from 'utils'
 import { getAirportListApi } from 'services/airport'
 
 import AirportItem from './AirportItem/AirportItem'
