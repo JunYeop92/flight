@@ -9,6 +9,7 @@ interface IProps {
 }
 
 export default function AirportItem({ data }: IProps) {
+  const { nameKo, likeCount, commentCount } = data
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClickOpen = () => setIsOpen(true)
@@ -18,16 +19,16 @@ export default function AirportItem({ data }: IProps) {
     <>
       <li className={styles.wrapper}>
         <button type='button' onClick={handleClickOpen}>
-          <div className={styles.title}>{data.nameKo}</div>
+          <div className={styles.title}>{nameKo}</div>
 
           <div className={styles.info}>
             <div className={styles.heart}>
               <HeartIcon />
-              <span>{data.likeCount}</span>
+              <span>{likeCount}</span>
             </div>
             <div className={styles.comment}>
               <CommentIcon />
-              <span>3</span>
+              <span>{commentCount}</span>
             </div>
           </div>
         </button>
