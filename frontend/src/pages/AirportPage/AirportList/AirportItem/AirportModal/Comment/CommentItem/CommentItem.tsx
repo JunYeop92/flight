@@ -1,7 +1,7 @@
-import { UserIcon } from 'assets/svgs'
 import dayjs from 'dayjs'
-import { ICommentItem } from 'types/comment'
+import { UserIcon } from 'assets/svgs'
 import styles from './commentItem.module.scss'
+import { ICommentItem } from 'types/comment'
 
 interface IProps {
   data: ICommentItem

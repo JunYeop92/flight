@@ -1,5 +1,5 @@
-import styles from './airportTop.module.scss'
 import { EndIcon, HeartIcon } from 'assets/svgs'
+import styles from './airportTop.module.scss'
 import { IIncLikeParam } from 'types/airport'
 import useIncLikeMutation from 'hooks/useIncLikeMutation'
 

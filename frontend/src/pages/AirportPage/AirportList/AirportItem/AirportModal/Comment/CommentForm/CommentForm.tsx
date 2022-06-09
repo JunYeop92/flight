@@ -1,9 +1,10 @@
-import { UserIcon } from 'assets/svgs'
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { useMutation, useQueryClient } from 'react-query'
-import { addCommentApi } from 'services/comment'
-import { queryKeys } from 'types/common'
+
+import { UserIcon } from 'assets/svgs'
 import styles from './commentForm.module.scss'
+import { queryKeys } from 'types/common'
+import { addCommentApi } from 'services/comment'
 
 interface IProps {
   airportId: string

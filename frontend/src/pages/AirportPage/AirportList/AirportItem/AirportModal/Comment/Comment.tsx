@@ -1,7 +1,9 @@
 import { useQuery } from 'react-query'
-import { getCommentListApi } from 'services/comment'
-import { queryKeys } from 'types/common'
+
 import styles from './comment.module.scss'
+import { queryKeys } from 'types/common'
+import { getCommentListApi } from 'services/comment'
+
 import CommentForm from './CommentForm/CommentForm'
 import CommentItem from './CommentItem/CommentItem'
 
@@ -19,7 +21,7 @@ export default function Comment({ airportId }: IProps) {
   if (!data) return null
   return (
     <div className={styles.wrapper}>
-      <h3>댓글 {data.length} &#62;</h3>
+      <h3>리뷰 {data.length} &#62;</h3>
       <ul>
         {data.map((d) => (
           <CommentItem key={d._id} data={d} />

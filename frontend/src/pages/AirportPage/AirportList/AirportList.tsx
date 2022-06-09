@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useQuery } from 'react-query'
-import { getAirportListApi } from 'services/airport'
+
 import { queryKeys } from 'types/common'
+import { getAirportListApi } from 'services/airport'
+
 import AirportItem from './AirportItem/AirportItem'
 import styles from './airportList.module.scss'
 

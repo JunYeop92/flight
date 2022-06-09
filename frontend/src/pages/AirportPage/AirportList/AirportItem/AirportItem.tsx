@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { CommentIcon, HeartIcon } from 'assets/svgs'
 import styles from './airportItem.module.scss'
-import AirportModal from './AirportModal/AirportModal'
 import { IAirportItem } from 'types/airport'
+import AirportModal from './AirportModal/AirportModal'
 
 interface IProps {
   data: IAirportItem
