@@ -1,14 +1,12 @@
 import { useState, useRef, useEffect, FormEvent, ChangeEvent } from 'react'
 import { SearchIcon } from 'assets/svgs'
 import styles from './searchBar.module.scss'
+import { useSearchParams } from 'react-router-dom'
 
-interface IProps {
-  handleSearchChange: (value: string) => void
-}
-
-export default function SearchBar({ handleSearchChange }: IProps) {
+export default function SearchBar() {
   const inputRef = useRef<HTMLInputElement>(null)
-  const [value, setValue] = useState('')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [value, setValue] = useState(searchParams.get('search') || '')
 
   useEffect(() => {
     if (!inputRef.current) return
@@ -18,7 +16,9 @@ export default function SearchBar({ handleSearchChange }: IProps) {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => setValue(e.currentTarget.value)
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    handleSearchChange(value)
+    const searchQuery = searchParams.get('search')
+    if (searchQuery === value) return
+    setSearchParams({ search: value })
   }
 
   return (

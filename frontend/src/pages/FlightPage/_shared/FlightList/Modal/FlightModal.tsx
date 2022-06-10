@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import { EndIcon } from 'assets/svgs'
 import styles from './flightModal.module.scss'
@@ -16,7 +16,8 @@ interface IProps {
 }
 
 export default function FlightModal({ item, handleClickClose }: IProps) {
-  const { estimatedDateTime, airport, airline, flightId, terminalId, gatenumber, elapsetime, remark } = item
+  const { estimatedDateTime, airport, airline, flightId, terminalId, gatenumber, elapsetime, remark, airportCode } =
+    item
   const location = useLocation()
   const isDepart = !location.pathname.startsWith('/arrive')
 
@@ -35,14 +36,8 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
           <div className={styles.content}>
             <DateTime isDepart={isDepart} estimatedDateTime={estimatedDateTime} elapsetime={elapsetime} />
             <Plane />
-            <Destination isDepart={isDepart} airport={airport} />
+            <Destination isDepart={isDepart} airport={airport} airportCode={airportCode} />
             <InfoBox data={{ airline, flightId, terminalId, gatenumber, remark }} />
-
-            <section className={styles.weather}>
-              <Link to={`/weather?search=${airport.split('/')[0]}`}>
-                {isDepart ? '목적지 날씨' : '출발지 날씨'} &#62;
-              </Link>
-            </section>
           </div>
         </div>
       </article>

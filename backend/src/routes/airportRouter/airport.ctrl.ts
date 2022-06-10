@@ -19,6 +19,7 @@ export const getList = async (req: Request, res: Response) => {
       },
       {
         $project: {
+          iata: 1,
           name: 1,
           nameKo: 1,
           countryNameKo: 1,

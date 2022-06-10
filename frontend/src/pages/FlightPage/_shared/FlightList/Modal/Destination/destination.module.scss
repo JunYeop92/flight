@@ -9,4 +9,10 @@
   @include responsive.after(SD) {
     font-size: 22px;
   }
+
+  a {
+    color: colors.$BLUE;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
 }

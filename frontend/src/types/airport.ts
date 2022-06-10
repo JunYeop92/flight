@@ -1,5 +1,6 @@
 export interface IAirportItem {
   _id: string
+  iata: string
   name: string
   nameKo: string
   countryNameKo: string

@@ -6,26 +6,42 @@ import { getAirportListApi } from 'services/airport'
 
 import AirportItem from './AirportItem/AirportItem'
 import styles from './airportList.module.scss'
+import { useSearchParams } from 'react-router-dom'
 
-interface IProps {
-  searchInput: string
-}
-
-export default function AirportList({ searchInput }: IProps) {
+export default function AirportList() {
   const { data } = useQuery(queryKeys.airpostList, getAirportListApi, {
     suspense: true,
     refetchOnWindowFocus: false,
     staleTime: 5 * 60 * 1000,
   })
   const [Items, setItems] = useState(data || [])
+  const [searchParams] = useSearchParams()
 
   useEffect(() => {
     if (!data) return
-    if (searchInput === '') setItems(data)
+    const searchQuery = searchParams.get('search')
+    const condition = searchParams.get('condition')
 
-    const result = data.filter((item) => item.nameKo.includes(searchInput))
+    if (!searchQuery) {
+      setItems(data)
+      return
+    }
+
+    if (condition === 'iata') {
+      const result = data.filter((item) => item.iata.includes(searchQuery))
+      setItems(result)
+      return
+    }
+
+    if (condition === 'en') {
+      const result = data.filter((item) => item.name.includes(searchQuery))
+      setItems(result)
+      return
+    }
+
+    const result = data.filter((item) => item.nameKo.includes(searchQuery))
     setItems(result)
-  }, [data, searchInput])
+  }, [data, searchParams])
 
   return (
     <ul className={styles.wrapper}>
