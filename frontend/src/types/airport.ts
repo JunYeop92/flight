@@ -3,6 +3,7 @@ export interface IAirportItem {
   name: string
   nameKo: string
   countryNameKo: string
+  cityName: string
   cityNameKo: string
   likeCount: number
   commentCount: number

@@ -1,0 +1,37 @@
+@use '/src/styles/constants/colors';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  width: 70px;
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid colors.$GRAY3;
+  border-radius: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .temp {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .iconBox {
+    margin-bottom: 5px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+
+  .date {
+    font-size: 12px;
+    color: colors.$GRAY;
+  }
+}

@@ -22,6 +22,7 @@ export const getList = async (req: Request, res: Response) => {
           name: 1,
           nameKo: 1,
           countryNameKo: 1,
+          cityName: 1,
           cityNameKo: 1,
           likeCount: 1,
           commentCount: { $size: '$comments' },

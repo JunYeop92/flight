@@ -67,7 +67,7 @@ interface IMain {
   temp_kf: number
 }
 
-export interface ICoord {
+interface ICoord {
   lon: number
   lat: number
 }

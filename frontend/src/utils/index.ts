@@ -39,4 +39,5 @@ export const queryKeys = {
   arriveList: (fromTime: string) => ['arriveList', fromTime] as const,
   airpostList: ['airportList'] as const,
   commentList: (airportId: string) => ['commentList', airportId] as const,
+  weatherList: (cityName: string) => ['weatherList', cityName] as const,
 }

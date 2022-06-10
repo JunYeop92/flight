@@ -21,7 +21,7 @@ export default function Comment({ airportId }: IProps) {
   if (!data) return null
   return (
     <div className={styles.wrapper}>
-      <h3>리뷰 {data.length} &#62;</h3>
+      <h3>리뷰 {data.length}</h3>
       <ul>
         {data.map((d) => (
           <CommentItem key={d._id} data={d} />
