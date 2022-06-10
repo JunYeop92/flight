@@ -1,0 +1,58 @@
+@use '/src/styles/constants/colors';
+
+.wrapper {
+  position: absolute;
+  z-index: 3;
+  width: 60px;
+  height: 100%;
+
+  .dropBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    color: colors.$GRAY2;
+    background-color: colors.$WHITE;
+    border-radius: 5px;
+
+    .icon {
+      position: absolute;
+      right: 10px;
+      bottom: 50%;
+      width: 12px;
+      height: 12px;
+      fill: colors.$GRAY2;
+      transform: translateY(50%);
+    }
+  }
+
+  ul {
+    display: none;
+    margin-top: 8px;
+    background-color: colors.$WHITE;
+    border-radius: 5px;
+
+    li {
+      display: flex;
+      height: 30px;
+      border-bottom: 1px solid colors.$GRAY2;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .selBtn {
+        width: 100%;
+        padding-left: 10px;
+        color: colors.$GRAY2;
+        text-align: left;
+      }
+    }
+
+    &.isView {
+      display: block;
+    }
+  }
+}

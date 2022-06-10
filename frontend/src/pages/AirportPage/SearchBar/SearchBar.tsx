@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect, FormEvent, ChangeEvent } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { SearchIcon } from 'assets/svgs'
 import styles from './searchBar.module.scss'
-import { useSearchParams } from 'react-router-dom'
+import Dropdown from 'components/Dropdown/Dropdown'
 
 export default function SearchBar() {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -23,6 +24,7 @@ export default function SearchBar() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
+      <Dropdown />
       <input type='search' placeholder='도시를 입력하세요.' ref={inputRef} value={value} onChange={handleChange} />
       <button type='submit'>
         <SearchIcon fill='currentColor' />
