@@ -37,7 +37,7 @@ export const getCalcTime = (isDepart: boolean, estimatedDateTime: string, elapse
 export const queryKeys = {
   departList: (fromTime: string) => ['departList', fromTime] as const,
   arriveList: (fromTime: string) => ['arriveList', fromTime] as const,
-  airpostList: ['airportList'] as const,
+  airpostList: (condition: string, search: string) => ['airportList', condition, search] as const,
   commentList: (airportId: string) => ['commentList', airportId] as const,
   weatherList: (cityName: string) => ['weatherList', cityName] as const,
 }

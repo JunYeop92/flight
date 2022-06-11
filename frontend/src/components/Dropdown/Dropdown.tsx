@@ -4,30 +4,33 @@ import { CaretDownIcon } from 'assets/svgs'
 import styles from './dropdown.module.scss'
 import useOnClickOutside from 'hooks/useOnClickOutside'
 
-const DATA_LIST = ['ko', 'en', 'iata']
+interface IProps {
+  dataList: string[]
+  value: string
+  handleSelect: (value: string) => void
+}
 
-export default function Dropdown() {
+export default function Dropdown({ dataList, value, handleSelect }: IProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [isView, setIsView] = useState(false)
-  const [selected, setSelected] = useState(DATA_LIST[0])
   useOnClickOutside(ref, () => setIsView(false))
 
   const handleClickDrop = () => setIsView((prev) => !prev)
 
   const handleClickData = (data: string) => () => {
-    setSelected(data)
+    handleSelect(data)
     setIsView(false)
   }
 
   return (
     <div className={styles.wrapper} ref={ref}>
       <button type='button' className={styles.dropBtn} onClick={handleClickDrop}>
-        {selected}
+        {value}
         <CaretDownIcon className={styles.icon} />
       </button>
 
       <ul className={cx({ [styles.isView]: isView })}>
-        {DATA_LIST.map((data) => (
+        {dataList.map((data) => (
           <li key={data}>
             <button type='button' className={styles.selBtn} onClick={handleClickData(data)}>
               {data}

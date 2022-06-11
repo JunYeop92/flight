@@ -14,3 +14,8 @@ export interface IIncLikeParam {
   _id: string
   likeCount: number
 }
+
+export interface IAirportSearchParam {
+  condition: string
+  search: string
+}

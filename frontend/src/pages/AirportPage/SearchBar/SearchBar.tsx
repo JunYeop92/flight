@@ -7,25 +7,34 @@ import Dropdown from 'components/Dropdown/Dropdown'
 export default function SearchBar() {
   const inputRef = useRef<HTMLInputElement>(null)
   const [searchParams, setSearchParams] = useSearchParams()
-  const [value, setValue] = useState(searchParams.get('search') || '')
+  const [searchInput, setSearchInput] = useState(searchParams.get('search') || '')
+  const dropdownData = ['ko', 'en', 'iata']
+  const [condition, setCondition] = useState(dropdownData[0])
 
   useEffect(() => {
     if (!inputRef.current) return
     inputRef.current.focus()
   }, [])
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => setValue(e.currentTarget.value)
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => setSearchInput(e.currentTarget.value)
+  const handleSelect = (value: string) => setCondition(value)
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const searchQuery = searchParams.get('search')
-    if (searchQuery === value) return
-    setSearchParams({ search: value })
+    if (searchQuery === searchInput) return
+    setSearchParams({ condition, search: searchInput })
   }
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <Dropdown />
-      <input type='search' placeholder='도시를 입력하세요.' ref={inputRef} value={value} onChange={handleChange} />
+      <Dropdown dataList={dropdownData} value={condition} handleSelect={handleSelect} />
+      <input
+        type='search'
+        placeholder='도시를 입력하세요.'
+        ref={inputRef}
+        value={searchInput}
+        onChange={handleChange}
+      />
       <button type='submit'>
         <SearchIcon fill='currentColor' />
       </button>
