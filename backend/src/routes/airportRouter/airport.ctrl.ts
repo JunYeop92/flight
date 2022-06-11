@@ -3,13 +3,26 @@ import Airport from '../../models/airport'
 
 /*
   GET /api/airport
+  query: { condition, search }
 */
 
+type TCondition = 'ko' | 'en' | 'iata' | ''
+
 export const getList = async (req: Request, res: Response) => {
+  const { condition, search } = req.query
+
+  const matchObj = {
+    ko: { nameKo: new RegExp(search as string, 'i') },
+    en: { name: new RegExp(search as string, 'i') },
+    iata: { iata: (search as string).toUpperCase() },
+    '': { nameKo: new RegExp(search as string, 'i') },
+  }[condition as TCondition]
+
   try {
     const result = await Airport.aggregate([
+      { $match: matchObj },
       {
-        // comments db join
+        // join commentsDB
         $lookup: {
           from: 'comments',
           localField: '_id',
