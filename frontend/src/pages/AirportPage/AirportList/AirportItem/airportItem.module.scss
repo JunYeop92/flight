@@ -20,6 +20,10 @@
       @include typography.lineClamp(1);
       font-weight: bold;
       text-align: left;
+
+      @include responsive.after(SD) {
+        font-size: 18px;
+      }
     }
 
     .info {

@@ -20,8 +20,6 @@ export default function SearchBar() {
   const handleSelect = (value: string) => setCondition(value)
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const searchQuery = searchParams.get('search')
-    if (searchQuery === searchInput) return
     setSearchParams({ condition, search: searchInput })
   }
 
