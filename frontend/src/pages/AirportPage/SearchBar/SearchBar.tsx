@@ -9,7 +9,7 @@ export default function SearchBar() {
   const [searchParams, setSearchParams] = useSearchParams()
   const [searchInput, setSearchInput] = useState(searchParams.get('search') || '')
   const dropdownData = ['ko', 'en', 'iata']
-  const [condition, setCondition] = useState(dropdownData[0])
+  const [condition, setCondition] = useState(searchParams.get('condition') || dropdownData[0])
 
   useEffect(() => {
     if (!inputRef.current) return
