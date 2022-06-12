@@ -10,9 +10,5 @@ export default function useFlightQuery(
 ) {
   const fromTime = useRecoilValue(fromTimeState)
 
-  return useQuery(key(fromTime), () => getFlightApi({ from_time: fromTime, to_time: '2400' }), {
-    suspense: true,
-    refetchOnWindowFocus: false,
-    staleTime: 5 * 60 * 1000,
-  })
+  return useQuery(key(fromTime), () => getFlightApi({ from_time: fromTime, to_time: '2400' }))
 }

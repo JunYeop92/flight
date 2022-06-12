@@ -8,11 +8,7 @@ interface IProps {
   airportId: string
 }
 export default function CommentList({ airportId }: IProps) {
-  const { data } = useQuery(queryKeys.commentList(airportId), () => getCommentListApi(airportId), {
-    suspense: true,
-    refetchOnWindowFocus: false,
-    staleTime: 5 * 60 * 1000,
-  })
+  const { data } = useQuery(queryKeys.commentList(airportId), () => getCommentListApi(airportId))
 
   if (!data) return null
   return (

@@ -7,7 +7,17 @@ import { BrowserRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { RecoilRoot } from 'recoil'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // refetchOnMount: false,
+      // refetchOnReconnect: false,
+      suspense: true,
+      refetchOnWindowFocus: false,
+      staleTime: 5 * 60 * 1000,
+    },
+  },
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

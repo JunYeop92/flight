@@ -11,9 +11,6 @@ export default function AirportList() {
   const { condition, search } = useAirportParams()
   const { data } = useQuery(queryKeys.airpostList(condition, search), () => getAirportApi({ condition, search }), {
     enabled: !!search,
-    suspense: true,
-    refetchOnWindowFocus: false,
-    staleTime: 5 * 60 * 1000,
   })
 
   if (!data) return null

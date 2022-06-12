@@ -9,11 +9,7 @@ interface IProps {
 }
 
 export default function WeatherList({ cityName }: IProps) {
-  const { data } = useQuery(queryKeys.weatherList(cityName), () => getWeatherApi(cityName), {
-    suspense: true,
-    refetchOnWindowFocus: false,
-    staleTime: 5 * 60 * 1000,
-  })
+  const { data } = useQuery(queryKeys.weatherList(cityName), () => getWeatherApi(cityName))
 
   if (!data) return null
   return (
