@@ -13,7 +13,8 @@ export default function AirportList() {
     enabled: !!search,
   })
 
-  if (!data) return null
+  if (!data) return <div className={styles.none}>검색어를 입력해주세요!</div>
+  if (!data.length) return <div className={styles.none}>검색 결과가 없습니다.</div>
   return (
     <ul className={styles.wrapper}>
       {data.map((d) => (
