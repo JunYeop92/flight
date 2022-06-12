@@ -47,7 +47,6 @@
       flex-direction: column;
       width: 320px;
       height: 100%;
-      // margin-bottom: 15px;
 
       @include responsive.after(SD) {
         width: 80%;
