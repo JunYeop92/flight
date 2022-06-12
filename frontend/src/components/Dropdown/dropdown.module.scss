@@ -1,8 +1,9 @@
 @use '/src/styles/constants/colors';
+@use '/src/styles/constants/levels';
 
 .wrapper {
   position: absolute;
-  z-index: 3;
+  z-index: levels.$DROPDOWN;
   width: 60px;
   height: 100%;
 
