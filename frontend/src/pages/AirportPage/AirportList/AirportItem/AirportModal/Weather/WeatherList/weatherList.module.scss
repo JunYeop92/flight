@@ -1,0 +1,22 @@
+@use '/src/styles/constants/colors';
+
+.wrapper {
+  display: flex;
+  padding-bottom: 10px;
+  margin: 0 5px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: block;
+    height: 15px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: colors.$GRAY6;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: colors.$TEAL;
+    border-radius: 10px;
+  }
+}

@@ -12,10 +12,9 @@
   background-color: colors.$WHITE;
 
   hr {
-    height: 1px;
-    // margin-top: 20px;
-    background-color: colors.$GRAY2;
+    margin: 20px 0;
     border: none;
+    border-top: 1px solid colors.$GRAY2;
   }
 }
 
