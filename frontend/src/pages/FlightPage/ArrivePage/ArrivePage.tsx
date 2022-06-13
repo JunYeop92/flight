@@ -1,10 +1,10 @@
-import FlightPage from '../_shared/Template'
+import FlightTemplate from '../_shared/FlightTemplate'
 import FetchArrive from './FetchArrive'
 
 export default function DepartPage() {
   return (
-    <FlightPage>
+    <FlightTemplate>
       <FetchArrive />
-    </FlightPage>
+    </FlightTemplate>
   )
 }
