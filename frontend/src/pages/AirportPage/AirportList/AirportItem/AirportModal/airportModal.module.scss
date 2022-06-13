@@ -1,5 +1,4 @@
 @use '/src/styles/constants/colors';
-@use '/src/styles/mixins/responsive';
 @use '/src/styles/constants/levels';
 
 .wrapper {
@@ -10,6 +9,11 @@
   height: 100%;
   overflow: auto;
   background-color: colors.$WHITE;
+  animation: fadeIn 1s;
+
+  &.fadeOut {
+    animation: fadeOut 1s;
+  }
 
   hr {
     margin: 20px 0;
@@ -18,6 +22,22 @@
   }
 }
 
-@include responsive.after(SD) {
-  // padding: 10px;
+@keyframes fadeIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
 }
