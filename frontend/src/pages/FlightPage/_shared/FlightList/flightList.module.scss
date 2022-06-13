@@ -71,6 +71,13 @@
       height: 100%;
       // max-height: 72vh;
       overflow: auto;
+
+      .none {
+        padding: 10px 5px;
+        font-size: 18px;
+        background-color: colors.$WHITE;
+        border-radius: 5px;
+      }
     }
   }
 }
