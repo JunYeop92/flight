@@ -8,7 +8,7 @@ export default function AirportInfo({ data }: IProps) {
   const { name, nameKo, cityNameKo, countryNameKo } = data
 
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <h2>
         <span>{nameKo}</span>
         <span>({name})</span>
@@ -23,6 +23,6 @@ export default function AirportInfo({ data }: IProps) {
           <dd>{countryNameKo}</dd>
         </div>
       </dl>
-    </div>
+    </section>
   )
 }

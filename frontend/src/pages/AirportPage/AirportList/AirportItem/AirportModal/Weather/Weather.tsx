@@ -9,11 +9,11 @@ interface IProps {
 
 export default function Weather({ cityName }: IProps) {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <h3>시간별 날씨(3h)</h3>
       <Suspense fallback={<Loading />}>
         <WeatherList cityName={cityName} />
       </Suspense>
-    </div>
+    </section>
   )
 }

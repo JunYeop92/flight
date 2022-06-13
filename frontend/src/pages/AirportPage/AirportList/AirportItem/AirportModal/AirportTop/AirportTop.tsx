@@ -14,7 +14,7 @@ export default function AirportTop({ data, handleClickClose }: IProps) {
   const handleClickLike = () => incLikeMutate({ _id, likeCount: likeCount + 1 })
 
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.wrapper}>
       <button type='button' className={styles.heart} onClick={handleClickLike}>
         <HeartIcon />
         <span>{likeCount}</span>
@@ -22,6 +22,6 @@ export default function AirportTop({ data, handleClickClose }: IProps) {
       <button type='button' className={styles.close} onClick={handleClickClose}>
         <EndIcon />
       </button>
-    </div>
+    </header>
   )
 }

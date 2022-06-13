@@ -9,9 +9,9 @@ export default function AirportPage() {
     <>
       <SearchBar />
       <Suspense fallback={<Loading />}>
-        <div className={styles.result}>
+        <article className={styles.result}>
           <AirportList />
-        </div>
+        </article>
       </Suspense>
     </>
   )

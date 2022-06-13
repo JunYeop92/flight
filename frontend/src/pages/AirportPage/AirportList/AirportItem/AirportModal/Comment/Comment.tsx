@@ -10,12 +10,12 @@ interface IProps {
 
 export default function Comment({ airportId }: IProps) {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <h3 className={styles.title}>리뷰</h3>
       <Suspense fallback={<Loading />}>
         <CommentList airportId={airportId} />
         <CommentForm airportId={airportId} />
       </Suspense>
-    </div>
+    </section>
   )
 }
