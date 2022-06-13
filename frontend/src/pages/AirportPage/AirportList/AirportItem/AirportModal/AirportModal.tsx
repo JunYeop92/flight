@@ -20,7 +20,7 @@ export default function AirportModal({ data, handleClickClose }: IProps) {
   const [isActiveClose, setIsActiveClose] = useState(false)
   const handleClickDelay = () => {
     setIsActiveClose(true)
-    setTimeout(() => handleClickClose(), 800)
+    setTimeout(() => handleClickClose(), 300)
   }
 
   return (

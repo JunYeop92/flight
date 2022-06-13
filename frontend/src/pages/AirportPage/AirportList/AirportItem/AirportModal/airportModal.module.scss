@@ -9,10 +9,10 @@
   height: 100%;
   overflow: auto;
   background-color: colors.$WHITE;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.5s;
 
   &.fadeOut {
-    animation: fadeOut 1s;
+    animation: fadeOut 0.5s;
   }
 
   hr {
