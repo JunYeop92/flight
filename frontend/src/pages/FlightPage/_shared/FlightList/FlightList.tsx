@@ -35,14 +35,14 @@ export default function FlightList({ dataList }: IProps) {
   }, [dataList])
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.title}>
+    <article className={styles.wrapper}>
+      <header className={styles.title}>
         <div className={styles.t1}>{isDepart ? '출발시간' : '도착시간'}</div>
         <div className={styles.t2}>{isDepart ? '목적지' : '출발지'}</div>
         <div className={styles.t3}>항공사</div>
         <div className={styles.t4}>터미널</div>
         <div className={styles.t5}>게이트</div>
-      </div>
+      </header>
 
       <div className={styles.flightWrapper}>
         <ul className={styles.list}>
@@ -55,6 +55,6 @@ export default function FlightList({ dataList }: IProps) {
           )}
         </ul>
       </div>
-    </div>
+    </article>
   )
 }

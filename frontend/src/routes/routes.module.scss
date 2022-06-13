@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
   }
 
-  header {
+  .header {
     @include flexbox.flexbox(center, center);
     background-color: colors.$WHITE;
     border-bottom: 1px solid colors.$GRAY3;
@@ -49,7 +49,7 @@ body {
   }
 
   @include responsive.after(SD) {
-    header {
+    .header {
       justify-content: start;
       height: 60px;
       padding-left: 10px;

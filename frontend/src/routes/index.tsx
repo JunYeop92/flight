@@ -10,21 +10,21 @@ import AirportPage from 'pages/AirportPage/AirportPage'
 export default function App() {
   return (
     <div className={styles.app}>
-      <header>
+      <header className={styles.header}>
         <Title />
         <div className={styles.nav}>
           <Navigation />
         </div>
       </header>
       <main>
-        <div className={styles.content}>
+        <article className={styles.content}>
           <Routes>
             <Route path='/' element={<DepartPage />} />
             <Route path='arrive' element={<ArrivePage />} />
             <Route path='airport' element={<AirportPage />} />
             <Route path='*' element={<div>404</div>} />
           </Routes>
-        </div>
+        </article>
       </main>
       <footer>
         <Navigation />

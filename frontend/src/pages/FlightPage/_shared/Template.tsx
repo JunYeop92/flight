@@ -11,13 +11,13 @@ interface IProps {
 export default function FlightPage({ children }: IProps) {
   return (
     <>
-      <div className={styles.top}>
+      <header className={styles.top}>
         <h2>오늘 운항 시간표</h2>
         <div className={styles.time}>
           <NowTime />
           <Refresh />
         </div>
-      </div>
+      </header>
       <Suspense fallback={<Loading />}>{children}</Suspense>
     </>
   )
