@@ -9,11 +9,11 @@ import useAirportParams from 'hooks/useAirportParams'
 
 export default function AirportList() {
   const { condition, search } = useAirportParams()
-  const { data } = useQuery(queryKeys.airpostList(condition, search), () => getAirportApi({ condition, search }), {
+  const { data = [] } = useQuery(queryKeys.airpostList(condition, search), () => getAirportApi({ condition, search }), {
     enabled: !!search,
   })
 
-  if (!data) return <div className={styles.none}>검색어를 입력해주세요!</div>
+  if (!search) return <div className={styles.none}>검색어를 입력해주세요!</div>
   if (!data.length) return <div className={styles.none}>검색 결과가 없습니다.</div>
   return (
     <ul className={styles.wrapper}>

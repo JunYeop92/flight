@@ -4,8 +4,7 @@ import useFlightQuery from 'hooks/useFlightQuery'
 import FlightList from '../_shared/FlightList/FlightList'
 
 export default function FetchArrive() {
-  const { data } = useFlightQuery(queryKeys.arriveList, getFlightArriveApi)
+  const { data = [] } = useFlightQuery(queryKeys.arriveList, getFlightArriveApi)
 
-  if (!data) return null
   return <FlightList dataList={data} />
 }
