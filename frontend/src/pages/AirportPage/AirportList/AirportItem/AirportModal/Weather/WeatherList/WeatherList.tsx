@@ -9,9 +9,8 @@ interface IProps {
 }
 
 export default function WeatherList({ cityName }: IProps) {
-  const { data } = useQuery(queryKeys.weatherList(cityName), () => getWeatherApi(cityName))
+  const { data = [] } = useQuery(queryKeys.weatherList(cityName), () => getWeatherApi(cityName))
 
-  if (!data) return null
   return (
     <ul className={styles.wrapper}>
       {data.map((d) => (

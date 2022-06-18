@@ -23,15 +23,15 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
 
   return (
     <Portal>
-      <article className={styles.overlay}>
+      <div className={styles.overlay}>
         <button type='button' className={styles.backBtn} onClick={handleClickClose} aria-label='outside-close-button' />
-        <div className={styles.box}>
-          <div className={styles.title}>
+        <article className={styles.box}>
+          <header className={styles.title}>
             <h3>운항 정보</h3>
             <button type='button' onClick={handleClickClose}>
               <EndIcon />
             </button>
-          </div>
+          </header>
 
           <div className={styles.content}>
             <DateTime isDepart={isDepart} estimatedDateTime={estimatedDateTime} elapsetime={elapsetime} />
@@ -39,8 +39,8 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
             <Destination isDepart={isDepart} airport={airport} airportCode={airportCode} />
             <InfoBox data={{ airline, flightId, terminalId, gatenumber, remark }} />
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </Portal>
   )
 }

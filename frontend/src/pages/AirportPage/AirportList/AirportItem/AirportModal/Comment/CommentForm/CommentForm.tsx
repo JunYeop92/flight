@@ -5,6 +5,7 @@ import { UserIcon } from 'assets/svgs'
 import styles from './commentForm.module.scss'
 import { queryKeys } from 'utils'
 import { addCommentApi } from 'services/comment'
+import useAirportParams from 'hooks/useAirportParams'
 
 interface IProps {
   airportId: string
@@ -12,9 +13,12 @@ interface IProps {
 
 export default function CommentForm({ airportId }: IProps) {
   const queryClient = useQueryClient()
+
+  const { condition, search } = useAirportParams()
   const { mutate: addCommentMutate } = useMutation(addCommentApi, {
     onSuccess: () => {
       queryClient.invalidateQueries(queryKeys.commentList(airportId))
+      queryClient.invalidateQueries(queryKeys.airpostList(condition, search))
     },
   })
 

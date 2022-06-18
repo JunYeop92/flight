@@ -1,7 +1,7 @@
 @use '/src/styles/constants/colors';
 @use '/src/styles/mixins/flexbox';
 
-.title {
+.wrapper {
   @include flexbox.flexbox(center, center);
   height: 40px;
   font-size: 20px;

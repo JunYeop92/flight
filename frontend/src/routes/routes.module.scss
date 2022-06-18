@@ -2,31 +2,27 @@
 @use '/src/styles/mixins/flexbox';
 @use '/src/styles/mixins/responsive';
 
+body {
+  background-color: colors.$LIGHT_BLUE2;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
 
-  header {
+  @include responsive.after(HD) {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .header {
     @include flexbox.flexbox(center, center);
     background-color: colors.$WHITE;
     border-bottom: 1px solid colors.$GRAY3;
 
-    @include responsive.after(SD) {
-      justify-content: start;
-      height: 60px;
-      padding-left: 10px;
-    }
-
     .nav {
       display: none;
-
-      @include responsive.after(SD) {
-        display: block;
-        width: 280px;
-        margin-left: 40px;
-        font-size: 18px;
-      }
     }
   }
 
@@ -38,20 +34,11 @@
     overflow: hidden;
     background-color: colors.$GRAY6;
 
-    @include responsive.after(SD) {
-      padding-top: 30px;
-    }
-
     .content {
       display: flex;
       flex-direction: column;
       width: 320px;
       height: 100%;
-
-      @include responsive.after(SD) {
-        width: 80%;
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -59,8 +46,32 @@
     width: 100%;
     background-color: colors.$WHITE;
     border-top: 1px solid colors.$GRAY3;
+  }
 
-    @include responsive.after(SD) {
+  @include responsive.after(SD) {
+    .header {
+      justify-content: start;
+      height: 60px;
+      padding-left: 10px;
+
+      .nav {
+        display: block;
+        width: 280px;
+        margin-left: 40px;
+        font-size: 18px;
+      }
+    }
+
+    main {
+      padding-top: 30px;
+
+      .content {
+        width: 80%;
+        margin-bottom: 0;
+      }
+    }
+
+    footer {
       display: none;
     }
   }

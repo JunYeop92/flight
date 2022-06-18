@@ -11,6 +11,13 @@ export default function SearchBar() {
   const dropdownData = ['ko', 'en', 'iata']
   const [condition, setCondition] = useState(searchParams.get('condition') || dropdownData[0])
 
+  type TCondition = 'ko' | 'en' | 'iata'
+  const conditionPlaceholder = {
+    ko: '한글로 공항을 입력해주세요.',
+    en: '영어로 공항을 입력해주세요.',
+    iata: 'IATA 공항 코드를 입력해주세요.',
+  }[condition as TCondition]
+
   useEffect(() => {
     if (!inputRef.current) return
     inputRef.current.focus()
@@ -28,7 +35,7 @@ export default function SearchBar() {
       <Dropdown dataList={dropdownData} value={condition} handleSelect={handleSelect} />
       <input
         type='search'
-        placeholder='도시를 입력하세요.'
+        placeholder={conditionPlaceholder}
         ref={inputRef}
         value={searchInput}
         onChange={handleChange}

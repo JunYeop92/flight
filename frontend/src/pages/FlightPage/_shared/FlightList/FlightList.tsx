@@ -35,17 +35,18 @@ export default function FlightList({ dataList }: IProps) {
   }, [dataList])
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.title}>
+    <article className={styles.wrapper}>
+      <header className={styles.title}>
         <div className={styles.t1}>{isDepart ? '출발시간' : '도착시간'}</div>
         <div className={styles.t2}>{isDepart ? '목적지' : '출발지'}</div>
         <div className={styles.t3}>항공사</div>
         <div className={styles.t4}>터미널</div>
         <div className={styles.t5}>게이트</div>
-      </div>
+      </header>
 
       <div className={styles.flightWrapper}>
         <ul className={styles.list}>
+          {!flightDatas.length && <li className={styles.none}>운항 스케줄이 없습니다.</li>}
           {flightDatas.map((data: any) =>
             Array.isArray(data) ? (
               <FlightShareItems key={`Items-${data[0].estimatedDateTime}-${data[0].flightId}`} items={data} />
@@ -55,6 +56,6 @@ export default function FlightList({ dataList }: IProps) {
           )}
         </ul>
       </div>
-    </div>
+    </article>
   )
 }
