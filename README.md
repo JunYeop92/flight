@@ -8,6 +8,8 @@
 
 - 개발기간 : 5/29 ~
 
+<img width="761" alt="인천공항 운항정보" src="https://user-images.githubusercontent.com/41728258/174476520-ff830820-bfb6-49e3-a114-6b877a3fb857.png">
+
 <br/>
 
 > ## 기술 스택
