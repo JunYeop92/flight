@@ -117,7 +117,7 @@ Optimistic Update는 사용자가 액션을 발생하면 성공할 것이라고 
 
 - **useOnClickOutside 문제점**
 
-  리액트에서 유용한 커스텀 훅인 useOnClickOuside이 있습니다. 지정한 노드 객체 이외의 이벤트를 감지할 수 있는 훅입니다. 구글링했을 때 검색되는 이 훅의 코드를 보면 거의 mousedown 이벤트로 걸려 있습니다. 왜 click 이벤트가 아닌 mousedown 이벤트를 사용했는 지, click 이벤트를 사용했을 때 발생하는 문제점이 있는 지 그리고 그 문제점을 해결방안은 무엇인지 (useOnClickOutside에서 왜 mousedown 이벤트를 사용했을까?)[https://velog.io/@imconfi11/%EC%99%9C-useOnClickOutside%EC%97%90%EC%84%9C-mousedown-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%96%88%EC%9D%84%EA%B9%8C]에 정리했습니다.
+  리액트에서 유용한 커스텀 훅인 useOnClickOuside이 있습니다. 지정한 노드 객체 이외의 이벤트를 감지할 수 있는 훅입니다. 구글링했을 때 검색되는 이 훅의 코드를 보면 거의 mousedown 이벤트로 걸려 있습니다. **왜 click 이벤트가 아닌 mousedown 이벤트를 사용했는 지, click 이벤트를 사용했을 때 발생하는 문제점이 있는 지 그리고 그 문제점을 해결방안은 무엇인지 [useOnClickOutside에서 왜 mousedown 이벤트를 사용했을까?](https://velog.io/@imconfi11/%EC%99%9C-useOnClickOutside%EC%97%90%EC%84%9C-mousedown-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%96%88%EC%9D%84%EA%B9%8C)에 정리했습니다.**
 
 - **오늘 운항 시간표에서 어떻게 같은 목적지(도착지)끼리 묶어서 표현할까?**
 
