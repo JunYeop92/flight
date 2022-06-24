@@ -9,6 +9,8 @@ import Plane from './Plane/Plane'
 import Destination from './Destination/Destination'
 import DateTime from './DateTime/DateTime'
 import InfoBox from './InfoBox/InfoBox'
+import useOnClickOutside from 'hooks/useOnClickOutside'
+import { useRef } from 'react'
 
 interface IProps {
   item: IFlightItem
@@ -21,11 +23,12 @@ export default function FlightModal({ item, handleClickClose }: IProps) {
   const location = useLocation()
   const isDepart = !location.pathname.startsWith('/arrive')
 
+  const ref = useRef<HTMLDivElement>(null)
+  useOnClickOutside(ref, handleClickClose)
   return (
     <Portal>
       <div className={styles.overlay}>
-        <button type='button' className={styles.backBtn} onClick={handleClickClose} aria-label='outside-close-button' />
-        <article className={styles.box}>
+        <article className={styles.box} ref={ref}>
           <header className={styles.title}>
             <h3>운항 정보</h3>
             <button type='button' onClick={handleClickClose}>

@@ -47,7 +47,7 @@ export default function FlightList({ dataList }: IProps) {
       <div className={styles.flightWrapper}>
         <ul className={styles.list}>
           {!flightDatas.length && <li className={styles.none}>운항 스케줄이 없습니다.</li>}
-          {flightDatas.map((data: any) =>
+          {flightDatas.map((data) =>
             Array.isArray(data) ? (
               <FlightShareItems key={`Items-${data[0].estimatedDateTime}-${data[0].flightId}`} items={data} />
             ) : (
